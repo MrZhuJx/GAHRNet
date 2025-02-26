@@ -1,0 +1,2384 @@
+[Warning] Fused window process have not been installed. Please refer to get_started.md for installation.
+[Warning] Fused window process have not been installed. Please refer to get_started.md for installation.
+[Warning] Fused window process have not been installed. Please refer to get_started.md for installation.
+[Warning] Fused window process have not been installed. Please refer to get_started.md for installation.
+[Warning] Fused window process have not been installed. Please refer to get_started.md for installation.
+Using Pytorch  for DW-Conv
+Namespace(device='cuda:0', data_path='/home/jxzhu/HrNet/data1', fixed_size=[512, 512], num_joints=29, output_dir='/home/jxzhu/NewNet/weight1', resume='', start_epoch=0, epochs=300, lr_steps=[170, 200], lr_gamma=0.1, lr=0.001, weight_decay=0.0001, batch_size=12, amp=False)
+Using cuda device training.
+SwinTransformerSys expand initial----depths:[2, 2, 2, 2];depths_decoder:[1, 2, 2, 2];drop_path_rate:0.1;num_classes:29
+/home/jxzhu/.conda/envs/PCTT/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1702400410390/work/aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+---final upsample expand_first---
+Epoch: [0]  [ 0/76]  eta: 0:07:39  lr: 0.000014  loss: 287.2108 (287.2108)  time: 6.0442  data: 4.7414  max mem: 15024
+Epoch: [0]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 276.6239 (277.9103)  time: 4.6969  data: 4.2384  max mem: 15242
+Epoch: [0] Total time: 0:06:00 (4.7371 s / it)
+  [  0/171]  eta: 0:03:43    time: 1.3060  data: 0.3920  max mem: 15242
+  [ 80/171]  eta: 0:00:32    time: 0.3596  data: 0.3427  max mem: 15242
+  [160/171]  eta: 0:00:03    time: 0.3605  data: 0.3404  max mem: 15242
+  [170/171]  eta: 0:00:00    time: 0.3700  data: 0.3519  max mem: 15242
+ Total time: 0:00:59 (0.3478 s / it)
+tensor(127.0082, device='cuda:0', dtype=torch.float64)
+Epoch: [1]  [ 0/76]  eta: 0:04:38  lr: 0.001000  loss: 276.6118 (276.6118)  time: 3.6704  data: 3.2122  max mem: 16332
+Epoch: [1]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 276.4983 (276.5715)  time: 3.5056  data: 3.0490  max mem: 16332
+Epoch: [1] Total time: 0:04:19 (3.4210 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1976  data: 0.1816  max mem: 16332
+  [ 80/171]  eta: 0:00:23    time: 0.3247  data: 0.3071  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2449  data: 0.2294  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2691  data: 0.2536  max mem: 16332
+ Total time: 0:00:42 (0.2472 s / it)
+tensor(138.2268, device='cuda:0', dtype=torch.float64)
+Epoch: [2]  [ 0/76]  eta: 0:04:16  lr: 0.001000  loss: 276.5086 (276.5086)  time: 3.3689  data: 2.9114  max mem: 16332
+Epoch: [2]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 276.8768 (276.4066)  time: 3.5120  data: 3.0554  max mem: 16332
+Epoch: [2] Total time: 0:04:20 (3.4298 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1950  data: 0.1793  max mem: 16332
+  [ 80/171]  eta: 0:00:24    time: 0.3352  data: 0.3169  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2584  data: 0.2429  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2772  data: 0.2617  max mem: 16332
+ Total time: 0:00:44 (0.2577 s / it)
+tensor(134.9860, device='cuda:0', dtype=torch.float64)
+Epoch: [3]  [ 0/76]  eta: 0:04:40  lr: 0.001000  loss: 276.7468 (276.7468)  time: 3.6955  data: 3.2247  max mem: 16332
+Epoch: [3]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 276.4744 (276.5893)  time: 3.3237  data: 2.8674  max mem: 16332
+Epoch: [3] Total time: 0:04:16 (3.3750 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1933  data: 0.1777  max mem: 16332
+  [ 80/171]  eta: 0:00:21    time: 0.2723  data: 0.2565  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2753  data: 0.2593  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2698  data: 0.2541  max mem: 16332
+ Total time: 0:00:42 (0.2460 s / it)
+tensor(133.9543, device='cuda:0', dtype=torch.float64)
+Epoch: [4]  [ 0/76]  eta: 0:04:09  lr: 0.001000  loss: 276.4660 (276.4660)  time: 3.2818  data: 2.8237  max mem: 16332
+Epoch: [4]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 274.9780 (276.1179)  time: 3.5133  data: 3.0566  max mem: 16332
+Epoch: [4] Total time: 0:04:20 (3.4331 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1800  max mem: 16332
+  [ 80/171]  eta: 0:00:21    time: 0.2683  data: 0.2528  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2834  data: 0.2656  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2965  data: 0.2796  max mem: 16332
+ Total time: 0:00:42 (0.2488 s / it)
+tensor(69.3069, device='cuda:0', dtype=torch.float64)
+Epoch: [5]  [ 0/76]  eta: 0:04:05  lr: 0.001000  loss: 275.7275 (275.7275)  time: 3.2255  data: 2.7677  max mem: 16332
+Epoch: [5]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 275.8541 (274.4547)  time: 3.3974  data: 2.9408  max mem: 16332
+Epoch: [5] Total time: 0:04:22 (3.4536 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1957  data: 0.1796  max mem: 16332
+  [ 80/171]  eta: 0:00:23    time: 0.2803  data: 0.2645  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2454  data: 0.2298  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2701  data: 0.2542  max mem: 16332
+ Total time: 0:00:43 (0.2563 s / it)
+tensor(65.3890, device='cuda:0', dtype=torch.float64)
+Epoch: [6]  [ 0/76]  eta: 0:04:29  lr: 0.001000  loss: 276.1622 (276.1622)  time: 3.5518  data: 3.0941  max mem: 16332
+Epoch: [6]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 271.6531 (273.0604)  time: 3.3367  data: 2.8803  max mem: 16332
+Epoch: [6] Total time: 0:04:18 (3.3974 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1964  data: 0.1809  max mem: 16332
+  [ 80/171]  eta: 0:00:25    time: 0.3163  data: 0.2993  max mem: 16332
+  [160/171]  eta: 0:00:03    time: 0.2764  data: 0.2598  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.3072  data: 0.2903  max mem: 16332
+ Total time: 0:00:48 (0.2847 s / it)
+tensor(45.7704, device='cuda:0', dtype=torch.float64)
+Epoch: [7]  [ 0/76]  eta: 0:04:34  lr: 0.001000  loss: 271.2192 (271.2192)  time: 3.6083  data: 3.1505  max mem: 16332
+Epoch: [7]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 265.8928 (269.3736)  time: 3.5745  data: 3.1181  max mem: 16332
+Epoch: [7] Total time: 0:04:30 (3.5624 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1804  max mem: 16332
+  [ 80/171]  eta: 0:00:23    time: 0.3422  data: 0.3237  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2544  data: 0.2384  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2786  data: 0.2626  max mem: 16332
+ Total time: 0:00:44 (0.2590 s / it)
+tensor(37.0554, device='cuda:0', dtype=torch.float64)
+Epoch: [8]  [ 0/76]  eta: 0:04:19  lr: 0.001000  loss: 265.0986 (265.0986)  time: 3.4159  data: 2.9587  max mem: 16332
+Epoch: [8]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 262.1629 (263.8668)  time: 3.6445  data: 3.1888  max mem: 16332
+Epoch: [8] Total time: 0:04:30 (3.5587 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2550  data: 0.2369  max mem: 16332
+  [ 80/171]  eta: 0:00:24    time: 0.2855  data: 0.2691  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2457  data: 0.2302  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2991  data: 0.2825  max mem: 16332
+ Total time: 0:00:45 (0.2669 s / it)
+tensor(36.0160, device='cuda:0', dtype=torch.float64)
+Epoch: [9]  [ 0/76]  eta: 0:04:46  lr: 0.001000  loss: 260.4047 (260.4047)  time: 3.7691  data: 3.3114  max mem: 16332
+Epoch: [9]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 253.9547 (258.8161)  time: 3.5572  data: 3.1015  max mem: 16332
+Epoch: [9] Total time: 0:04:31 (3.5693 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1966  data: 0.1805  max mem: 16332
+  [ 80/171]  eta: 0:00:24    time: 0.3224  data: 0.3056  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2590  data: 0.2434  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2721  data: 0.2565  max mem: 16332
+ Total time: 0:00:44 (0.2599 s / it)
+tensor(35.3912, device='cuda:0', dtype=torch.float64)
+Epoch: [10]  [ 0/76]  eta: 0:04:14  lr: 0.001000  loss: 253.5771 (253.5771)  time: 3.3481  data: 2.8907  max mem: 16332
+Epoch: [10]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 243.2489 (252.3822)  time: 3.5276  data: 3.0720  max mem: 16332
+Epoch: [10] Total time: 0:04:29 (3.5431 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1956  data: 0.1794  max mem: 16332
+  [ 80/171]  eta: 0:00:24    time: 0.2828  data: 0.2671  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2487  data: 0.2332  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2994  data: 0.2825  max mem: 16332
+ Total time: 0:00:45 (0.2650 s / it)
+tensor(35.8039, device='cuda:0', dtype=torch.float64)
+Epoch: [11]  [ 0/76]  eta: 0:04:31  lr: 0.001000  loss: 245.7285 (245.7285)  time: 3.5746  data: 3.1176  max mem: 16332
+Epoch: [11]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 240.0483 (244.2856)  time: 3.6106  data: 3.1547  max mem: 16332
+Epoch: [11] Total time: 0:04:27 (3.5184 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2005  data: 0.1844  max mem: 16332
+  [ 80/171]  eta: 0:00:23    time: 0.2981  data: 0.2811  max mem: 16332
+  [160/171]  eta: 0:00:02    time: 0.2561  data: 0.2400  max mem: 16332
+  [170/171]  eta: 0:00:00    time: 0.2720  data: 0.2560  max mem: 16332
+ Total time: 0:00:43 (0.2568 s / it)
+tensor(29.7243, device='cuda:0', dtype=torch.float64)
+Epoch: [12]  [ 0/76]  eta: 0:04:21  lr: 0.001000  loss: 240.5547 (240.5547)  time: 3.4383  data: 2.9809  max mem: 16334
+Epoch: [12]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 230.4840 (236.5315)  time: 3.4995  data: 3.0440  max mem: 16334
+Epoch: [12] Total time: 0:04:20 (3.4240 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1941  data: 0.1786  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2737  data: 0.2578  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2870  data: 0.2696  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2915  data: 0.2748  max mem: 16334
+ Total time: 0:00:43 (0.2563 s / it)
+tensor(32.6278, device='cuda:0', dtype=torch.float64)
+Epoch: [13]  [ 0/76]  eta: 0:05:09  lr: 0.001000  loss: 230.3559 (230.3559)  time: 4.0705  data: 3.6130  max mem: 16334
+Epoch: [13]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 221.1341 (228.0933)  time: 3.5136  data: 3.0582  max mem: 16334
+Epoch: [13] Total time: 0:04:24 (3.4821 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1799  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2747  data: 0.2589  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2768  data: 0.2609  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2912  data: 0.2753  max mem: 16334
+ Total time: 0:00:42 (0.2474 s / it)
+tensor(26.6931, device='cuda:0', dtype=torch.float64)
+Epoch: [14]  [ 0/76]  eta: 0:04:24  lr: 0.001000  loss: 224.0497 (224.0497)  time: 3.4757  data: 3.0186  max mem: 16334
+Epoch: [14]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 222.8829 (222.1846)  time: 3.4785  data: 3.0230  max mem: 16334
+Epoch: [14] Total time: 0:04:28 (3.5348 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2282  data: 0.2108  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2739  data: 0.2580  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2600  data: 0.2439  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2713  data: 0.2554  max mem: 16334
+ Total time: 0:00:42 (0.2479 s / it)
+tensor(29.9923, device='cuda:0', dtype=torch.float64)
+Epoch: [15]  [ 0/76]  eta: 0:04:36  lr: 0.001000  loss: 213.7926 (213.7926)  time: 3.6386  data: 3.1808  max mem: 16334
+Epoch: [15]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 214.1400 (214.3736)  time: 3.4233  data: 2.9682  max mem: 16334
+Epoch: [15] Total time: 0:04:22 (3.4575 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2264  data: 0.2091  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3049  data: 0.2879  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2718  data: 0.2551  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3210  data: 0.3035  max mem: 16334
+ Total time: 0:00:44 (0.2620 s / it)
+tensor(21.8279, device='cuda:0', dtype=torch.float64)
+Epoch: [16]  [ 0/76]  eta: 0:04:51  lr: 0.001000  loss: 216.7949 (216.7949)  time: 3.8375  data: 3.3802  max mem: 16334
+Epoch: [16]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 211.8982 (208.6572)  time: 3.5416  data: 3.0862  max mem: 16334
+Epoch: [16] Total time: 0:04:25 (3.4971 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1997  data: 0.1838  max mem: 16334
+  [ 80/171]  eta: 0:00:21    time: 0.2720  data: 0.2561  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2872  data: 0.2702  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2848  data: 0.2689  max mem: 16334
+ Total time: 0:00:42 (0.2512 s / it)
+tensor(23.8607, device='cuda:0', dtype=torch.float64)
+Epoch: [17]  [ 0/76]  eta: 0:04:30  lr: 0.001000  loss: 202.2487 (202.2487)  time: 3.5576  data: 3.0996  max mem: 16334
+Epoch: [17]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 202.9048 (203.1083)  time: 3.4291  data: 2.9739  max mem: 16334
+Epoch: [17] Total time: 0:04:31 (3.5755 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1967  data: 0.1807  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.2756  data: 0.2597  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2674  data: 0.2506  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2914  data: 0.2746  max mem: 16334
+ Total time: 0:00:44 (0.2592 s / it)
+tensor(22.9629, device='cuda:0', dtype=torch.float64)
+Epoch: [18]  [ 0/76]  eta: 0:04:12  lr: 0.001000  loss: 199.2383 (199.2383)  time: 3.3266  data: 2.8706  max mem: 16334
+Epoch: [18]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 194.7925 (197.7991)  time: 3.4669  data: 3.0115  max mem: 16334
+Epoch: [18] Total time: 0:04:27 (3.5252 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1950  data: 0.1789  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.2956  data: 0.2793  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2528  data: 0.2367  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2829  data: 0.2668  max mem: 16334
+ Total time: 0:00:45 (0.2635 s / it)
+tensor(17.7009, device='cuda:0', dtype=torch.float64)
+Epoch: [19]  [ 0/76]  eta: 0:04:01  lr: 0.001000  loss: 190.9225 (190.9225)  time: 3.1812  data: 2.7233  max mem: 16334
+Epoch: [19]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 194.2105 (193.8707)  time: 3.5441  data: 3.0887  max mem: 16334
+Epoch: [19] Total time: 0:04:25 (3.4992 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2043  data: 0.1883  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2735  data: 0.2576  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2597  data: 0.2440  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3177  data: 0.3011  max mem: 16334
+ Total time: 0:00:42 (0.2475 s / it)
+tensor(18.2639, device='cuda:0', dtype=torch.float64)
+Epoch: [20]  [ 0/76]  eta: 0:05:16  lr: 0.001000  loss: 187.4670 (187.4670)  time: 4.1677  data: 3.7107  max mem: 16334
+Epoch: [20]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 188.0861 (190.2959)  time: 3.4852  data: 3.0298  max mem: 16334
+Epoch: [20] Total time: 0:04:30 (3.5559 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1997  data: 0.1838  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3183  data: 0.3015  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2468  data: 0.2309  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2712  data: 0.2553  max mem: 16334
+ Total time: 0:00:42 (0.2497 s / it)
+tensor(22.6123, device='cuda:0', dtype=torch.float64)
+Epoch: [21]  [ 0/76]  eta: 0:04:11  lr: 0.001000  loss: 198.2621 (198.2621)  time: 3.3097  data: 2.8529  max mem: 16334
+Epoch: [21]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 186.2926 (188.2713)  time: 3.5592  data: 3.1039  max mem: 16334
+Epoch: [21] Total time: 0:04:29 (3.5466 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1957  data: 0.1797  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3013  data: 0.2844  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2505  data: 0.2346  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2689  data: 0.2531  max mem: 16334
+ Total time: 0:00:43 (0.2548 s / it)
+tensor(22.3164, device='cuda:0', dtype=torch.float64)
+Epoch: [22]  [ 0/76]  eta: 0:04:10  lr: 0.001000  loss: 192.8587 (192.8587)  time: 3.2934  data: 2.8372  max mem: 16334
+Epoch: [22]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 174.7032 (184.8590)  time: 3.3638  data: 2.9085  max mem: 16334
+Epoch: [22] Total time: 0:04:26 (3.5049 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2035  data: 0.1871  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3179  data: 0.3003  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2966  data: 0.2792  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3145  data: 0.2977  max mem: 16334
+ Total time: 0:00:45 (0.2668 s / it)
+tensor(21.3129, device='cuda:0', dtype=torch.float64)
+Epoch: [23]  [ 0/76]  eta: 0:04:31  lr: 0.001000  loss: 170.2927 (170.2927)  time: 3.5693  data: 3.1122  max mem: 16334
+Epoch: [23]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 178.5466 (182.1517)  time: 3.5230  data: 3.0678  max mem: 16334
+Epoch: [23] Total time: 0:04:29 (3.5505 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2651  data: 0.2450  max mem: 16334
+  [ 80/171]  eta: 0:00:24    time: 0.2720  data: 0.2561  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2493  data: 0.2334  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3087  data: 0.2912  max mem: 16334
+ Total time: 0:00:45 (0.2663 s / it)
+tensor(20.8116, device='cuda:0', dtype=torch.float64)
+Epoch: [24]  [ 0/76]  eta: 0:04:04  lr: 0.001000  loss: 180.3485 (180.3485)  time: 3.2168  data: 2.7602  max mem: 16334
+Epoch: [24]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 177.0282 (178.4205)  time: 3.5563  data: 3.1008  max mem: 16334
+Epoch: [24] Total time: 0:04:29 (3.5470 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2356  data: 0.2179  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2846  data: 0.2683  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2660  data: 0.2496  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2802  data: 0.2644  max mem: 16334
+ Total time: 0:00:43 (0.2559 s / it)
+tensor(19.4376, device='cuda:0', dtype=torch.float64)
+Epoch: [25]  [ 0/76]  eta: 0:04:22  lr: 0.001000  loss: 178.4928 (178.4928)  time: 3.4599  data: 3.0027  max mem: 16334
+Epoch: [25]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 173.6273 (177.9343)  time: 3.4912  data: 3.0361  max mem: 16334
+Epoch: [25] Total time: 0:04:27 (3.5196 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1937  data: 0.1786  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3204  data: 0.3026  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2503  data: 0.2344  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2724  data: 0.2566  max mem: 16334
+ Total time: 0:00:42 (0.2511 s / it)
+tensor(21.3744, device='cuda:0', dtype=torch.float64)
+Epoch: [26]  [ 0/76]  eta: 0:04:26  lr: 0.001000  loss: 186.9292 (186.9292)  time: 3.5127  data: 3.0560  max mem: 16334
+Epoch: [26]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 166.4171 (175.6869)  time: 3.4708  data: 3.0156  max mem: 16334
+Epoch: [26] Total time: 0:04:22 (3.4529 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2011  data: 0.1852  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2923  data: 0.2759  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2461  data: 0.2303  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2854  data: 0.2692  max mem: 16334
+ Total time: 0:00:42 (0.2465 s / it)
+tensor(20.9973, device='cuda:0', dtype=torch.float64)
+Epoch: [27]  [ 0/76]  eta: 0:04:49  lr: 0.001000  loss: 181.8254 (181.8254)  time: 3.8101  data: 3.3533  max mem: 16334
+Epoch: [27]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 173.9932 (173.5728)  time: 3.4386  data: 2.9833  max mem: 16334
+Epoch: [27] Total time: 0:04:21 (3.4390 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2072  data: 0.1904  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2793  data: 0.2631  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.3005  data: 0.2827  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3025  data: 0.2856  max mem: 16334
+ Total time: 0:00:42 (0.2505 s / it)
+tensor(20.6064, device='cuda:0', dtype=torch.float64)
+Epoch: [28]  [ 0/76]  eta: 0:04:22  lr: 0.001000  loss: 164.0428 (164.0428)  time: 3.4503  data: 2.9931  max mem: 16334
+Epoch: [28]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 176.4266 (171.6511)  time: 3.4950  data: 3.0397  max mem: 16334
+Epoch: [28] Total time: 0:04:24 (3.4841 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2647  data: 0.2470  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.2992  data: 0.2828  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2679  data: 0.2513  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2738  data: 0.2580  max mem: 16334
+ Total time: 0:00:45 (0.2635 s / it)
+tensor(19.4383, device='cuda:0', dtype=torch.float64)
+Epoch: [29]  [ 0/76]  eta: 0:03:58  lr: 0.001000  loss: 171.8774 (171.8774)  time: 3.1342  data: 2.6774  max mem: 16334
+Epoch: [29]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 182.6109 (171.1391)  time: 3.5411  data: 3.0859  max mem: 16334
+Epoch: [29] Total time: 0:04:31 (3.5731 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1975  data: 0.1823  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.3012  data: 0.2845  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2471  data: 0.2313  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2731  data: 0.2572  max mem: 16334
+ Total time: 0:00:42 (0.2502 s / it)
+tensor(20.6443, device='cuda:0', dtype=torch.float64)
+Epoch: [30]  [ 0/76]  eta: 0:04:58  lr: 0.001000  loss: 165.3481 (165.3481)  time: 3.9253  data: 3.4678  max mem: 16334
+Epoch: [30]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 168.4596 (168.8893)  time: 3.6483  data: 3.1929  max mem: 16334
+Epoch: [30] Total time: 0:04:25 (3.4966 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2612  data: 0.2418  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2736  data: 0.2578  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2444  data: 0.2293  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2815  data: 0.2655  max mem: 16334
+ Total time: 0:00:42 (0.2513 s / it)
+tensor(20.1631, device='cuda:0', dtype=torch.float64)
+Epoch: [31]  [ 0/76]  eta: 0:04:08  lr: 0.001000  loss: 173.8911 (173.8911)  time: 3.2669  data: 2.8103  max mem: 16334
+Epoch: [31]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 163.2899 (167.9917)  time: 3.4981  data: 3.0428  max mem: 16334
+Epoch: [31] Total time: 0:04:25 (3.4951 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1975  data: 0.1816  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2888  data: 0.2725  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2817  data: 0.2647  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2906  data: 0.2744  max mem: 16334
+ Total time: 0:00:44 (0.2586 s / it)
+tensor(21.5878, device='cuda:0', dtype=torch.float64)
+Epoch: [32]  [ 0/76]  eta: 0:04:21  lr: 0.001000  loss: 176.7380 (176.7380)  time: 3.4384  data: 2.9822  max mem: 16334
+Epoch: [32]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 165.4845 (165.2646)  time: 3.4341  data: 2.9787  max mem: 16334
+Epoch: [32] Total time: 0:04:22 (3.4555 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2024  data: 0.1857  max mem: 16334
+  [ 80/171]  eta: 0:00:25    time: 0.3256  data: 0.3078  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2544  data: 0.2388  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2733  data: 0.2576  max mem: 16334
+ Total time: 0:00:45 (0.2674 s / it)
+tensor(18.8557, device='cuda:0', dtype=torch.float64)
+Epoch: [33]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 163.8512 (163.8512)  time: 3.3903  data: 2.9333  max mem: 16334
+Epoch: [33]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 178.4478 (163.8744)  time: 3.4735  data: 3.0183  max mem: 16334
+Epoch: [33] Total time: 0:04:21 (3.4437 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2047  data: 0.1887  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2771  data: 0.2614  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2529  data: 0.2363  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2720  data: 0.2560  max mem: 16334
+ Total time: 0:00:41 (0.2432 s / it)
+tensor(22.2209, device='cuda:0', dtype=torch.float64)
+Epoch: [34]  [ 0/76]  eta: 0:04:22  lr: 0.001000  loss: 171.0507 (171.0507)  time: 3.4498  data: 2.9930  max mem: 16334
+Epoch: [34]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 156.2828 (162.3001)  time: 3.4793  data: 3.0242  max mem: 16334
+Epoch: [34] Total time: 0:04:26 (3.5053 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1957  data: 0.1798  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.3006  data: 0.2843  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2453  data: 0.2295  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2693  data: 0.2536  max mem: 16334
+ Total time: 0:00:42 (0.2513 s / it)
+tensor(18.0734, device='cuda:0', dtype=torch.float64)
+Epoch: [35]  [ 0/76]  eta: 0:04:33  lr: 0.001000  loss: 157.8240 (157.8240)  time: 3.6025  data: 3.1451  max mem: 16334
+Epoch: [35]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 167.2825 (162.1223)  time: 3.4548  data: 2.9994  max mem: 16334
+Epoch: [35] Total time: 0:04:25 (3.4882 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2030  data: 0.1870  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2733  data: 0.2575  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2539  data: 0.2381  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.3138  data: 0.2967  max mem: 16334
+ Total time: 0:00:43 (0.2540 s / it)
+tensor(18.7065, device='cuda:0', dtype=torch.float64)
+Epoch: [36]  [ 0/76]  eta: 0:05:12  lr: 0.001000  loss: 169.8462 (169.8462)  time: 4.1154  data: 3.6573  max mem: 16334
+Epoch: [36]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 147.9071 (160.7981)  time: 3.4622  data: 3.0071  max mem: 16334
+Epoch: [36] Total time: 0:04:26 (3.5096 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1970  data: 0.1811  max mem: 16334
+  [ 80/171]  eta: 0:00:23    time: 0.2792  data: 0.2632  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2674  data: 0.2520  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2701  data: 0.2550  max mem: 16334
+ Total time: 0:00:44 (0.2586 s / it)
+tensor(19.4665, device='cuda:0', dtype=torch.float64)
+Epoch: [37]  [ 0/76]  eta: 0:04:02  lr: 0.001000  loss: 155.4105 (155.4105)  time: 3.1871  data: 2.7308  max mem: 16334
+Epoch: [37]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 160.9653 (157.7451)  time: 3.5048  data: 3.0494  max mem: 16334
+Epoch: [37] Total time: 0:04:29 (3.5417 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1999  data: 0.1841  max mem: 16334
+  [ 80/171]  eta: 0:00:22    time: 0.2735  data: 0.2578  max mem: 16334
+  [160/171]  eta: 0:00:02    time: 0.2453  data: 0.2302  max mem: 16334
+  [170/171]  eta: 0:00:00    time: 0.2724  data: 0.2573  max mem: 16334
+ Total time: 0:00:41 (0.2426 s / it)
+tensor(17.4874, device='cuda:0', dtype=torch.float64)
+Epoch: [38]  [ 0/76]  eta: 0:04:16  lr: 0.001000  loss: 160.7922 (160.7922)  time: 3.3742  data: 2.9175  max mem: 16335
+Epoch: [38]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 153.9681 (159.7290)  time: 3.6147  data: 3.1595  max mem: 16335
+Epoch: [38] Total time: 0:04:30 (3.5604 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2079  data: 0.1920  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2956  data: 0.2788  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2473  data: 0.2315  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2838  data: 0.2678  max mem: 16335
+ Total time: 0:00:44 (0.2579 s / it)
+tensor(15.7240, device='cuda:0', dtype=torch.float64)
+Epoch: [39]  [ 0/76]  eta: 0:04:40  lr: 0.001000  loss: 153.8874 (153.8874)  time: 3.6873  data: 3.2310  max mem: 16335
+Epoch: [39]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 149.1888 (156.6193)  time: 3.5894  data: 3.1340  max mem: 16335
+Epoch: [39] Total time: 0:04:25 (3.4973 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2092  data: 0.1934  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.3333  data: 0.3151  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2505  data: 0.2348  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2748  data: 0.2591  max mem: 16335
+ Total time: 0:00:45 (0.2640 s / it)
+tensor(14.7717, device='cuda:0', dtype=torch.float64)
+Epoch: [40]  [ 0/76]  eta: 0:04:19  lr: 0.001000  loss: 150.4742 (150.4742)  time: 3.4193  data: 2.9622  max mem: 16335
+Epoch: [40]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 154.6830 (155.0799)  time: 3.5350  data: 3.0796  max mem: 16335
+Epoch: [40] Total time: 0:04:24 (3.4853 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1979  data: 0.1822  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2780  data: 0.2620  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2859  data: 0.2690  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3163  data: 0.2993  max mem: 16335
+ Total time: 0:00:44 (0.2593 s / it)
+tensor(13.7169, device='cuda:0', dtype=torch.float64)
+Epoch: [41]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 151.2578 (151.2578)  time: 3.3853  data: 2.9283  max mem: 16335
+Epoch: [41]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 151.4541 (156.2911)  time: 3.6355  data: 3.1799  max mem: 16335
+Epoch: [41] Total time: 0:04:27 (3.5235 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1966  data: 0.1807  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2909  data: 0.2751  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2559  data: 0.2401  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2762  data: 0.2605  max mem: 16335
+ Total time: 0:00:42 (0.2504 s / it)
+tensor(15.4344, device='cuda:0', dtype=torch.float64)
+Epoch: [42]  [ 0/76]  eta: 0:04:16  lr: 0.001000  loss: 152.6856 (152.6856)  time: 3.3773  data: 2.9203  max mem: 16335
+Epoch: [42]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 148.2672 (152.9805)  time: 3.5050  data: 3.0495  max mem: 16335
+Epoch: [42] Total time: 0:04:29 (3.5483 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2028  data: 0.1871  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.2904  data: 0.2741  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2483  data: 0.2325  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2861  data: 0.2690  max mem: 16335
+ Total time: 0:00:45 (0.2661 s / it)
+tensor(12.0697, device='cuda:0', dtype=torch.float64)
+Epoch: [43]  [ 0/76]  eta: 0:04:38  lr: 0.001000  loss: 153.4077 (153.4077)  time: 3.6583  data: 3.2007  max mem: 16335
+Epoch: [43]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 147.5118 (153.7855)  time: 3.5119  data: 3.0567  max mem: 16335
+Epoch: [43] Total time: 0:04:28 (3.5378 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1799  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2737  data: 0.2580  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2594  data: 0.2436  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2815  data: 0.2653  max mem: 16335
+ Total time: 0:00:43 (0.2536 s / it)
+tensor(11.7243, device='cuda:0', dtype=torch.float64)
+Epoch: [44]  [ 0/76]  eta: 0:05:00  lr: 0.001000  loss: 147.9792 (147.9792)  time: 3.9564  data: 3.5002  max mem: 16335
+Epoch: [44]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 143.2804 (150.1407)  time: 3.4872  data: 3.0324  max mem: 16335
+Epoch: [44] Total time: 0:04:24 (3.4780 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1982  data: 0.1823  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3214  data: 0.3040  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2949  data: 0.2778  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2898  data: 0.2736  max mem: 16335
+ Total time: 0:00:46 (0.2725 s / it)
+tensor(11.5459, device='cuda:0', dtype=torch.float64)
+Epoch: [45]  [ 0/76]  eta: 0:04:23  lr: 0.001000  loss: 137.5241 (137.5241)  time: 3.4673  data: 3.0105  max mem: 16335
+Epoch: [45]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 149.1124 (147.6309)  time: 3.5163  data: 3.0611  max mem: 16335
+Epoch: [45] Total time: 0:04:29 (3.5480 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2002  data: 0.1842  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.3164  data: 0.2995  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2462  data: 0.2305  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2863  data: 0.2697  max mem: 16335
+ Total time: 0:00:45 (0.2656 s / it)
+tensor(11.5251, device='cuda:0', dtype=torch.float64)
+Epoch: [46]  [ 0/76]  eta: 0:05:09  lr: 0.001000  loss: 138.8113 (138.8113)  time: 4.0751  data: 3.6177  max mem: 16335
+Epoch: [46]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 141.1547 (147.7448)  time: 3.3613  data: 2.9063  max mem: 16335
+Epoch: [46] Total time: 0:04:25 (3.4944 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1990  data: 0.1814  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2730  data: 0.2572  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2673  data: 0.2513  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2836  data: 0.2674  max mem: 16335
+ Total time: 0:00:43 (0.2556 s / it)
+tensor(11.2394, device='cuda:0', dtype=torch.float64)
+Epoch: [47]  [ 0/76]  eta: 0:04:35  lr: 0.001000  loss: 146.5298 (146.5298)  time: 3.6218  data: 3.1652  max mem: 16335
+Epoch: [47]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 144.6530 (144.4650)  time: 3.4280  data: 2.9728  max mem: 16335
+Epoch: [47] Total time: 0:04:21 (3.4365 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2676  data: 0.2502  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2836  data: 0.2681  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2581  data: 0.2419  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2722  data: 0.2564  max mem: 16335
+ Total time: 0:00:42 (0.2503 s / it)
+tensor(11.1579, device='cuda:0', dtype=torch.float64)
+Epoch: [48]  [ 0/76]  eta: 0:04:06  lr: 0.001000  loss: 139.9089 (139.9089)  time: 3.2416  data: 2.7847  max mem: 16335
+Epoch: [48]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 147.7791 (145.6396)  time: 3.7783  data: 3.3230  max mem: 16335
+Epoch: [48] Total time: 0:04:38 (3.6592 s / it)
+  [  0/171]  eta: 0:00:42    time: 0.2507  data: 0.2330  max mem: 16335
+  [ 80/171]  eta: 0:00:26    time: 0.3307  data: 0.3134  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2955  data: 0.2791  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2792  data: 0.2639  max mem: 16335
+ Total time: 0:00:47 (0.2797 s / it)
+tensor(10.0890, device='cuda:0', dtype=torch.float64)
+Epoch: [49]  [ 0/76]  eta: 0:04:14  lr: 0.001000  loss: 133.1688 (133.1688)  time: 3.3431  data: 2.8868  max mem: 16335
+Epoch: [49]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 137.7142 (142.4513)  time: 3.5509  data: 3.0955  max mem: 16335
+Epoch: [49] Total time: 0:04:36 (3.6371 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1975  data: 0.1807  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.3259  data: 0.3085  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2841  data: 0.2666  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2917  data: 0.2751  max mem: 16335
+ Total time: 0:00:47 (0.2770 s / it)
+tensor(9.1340, device='cuda:0', dtype=torch.float64)
+Epoch: [50]  [ 0/76]  eta: 0:05:22  lr: 0.001000  loss: 158.7526 (158.7526)  time: 4.2420  data: 3.7853  max mem: 16335
+Epoch: [50]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 146.5848 (142.9295)  time: 3.6538  data: 3.1985  max mem: 16335
+Epoch: [50] Total time: 0:04:30 (3.5603 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1980  data: 0.1822  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3129  data: 0.2966  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.3041  data: 0.2864  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3107  data: 0.2938  max mem: 16335
+ Total time: 0:00:46 (0.2720 s / it)
+tensor(10.3821, device='cuda:0', dtype=torch.float64)
+Epoch: [51]  [ 0/76]  eta: 0:04:00  lr: 0.001000  loss: 137.1739 (137.1739)  time: 3.1614  data: 2.7050  max mem: 16335
+Epoch: [51]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 134.3107 (139.6972)  time: 3.4565  data: 3.0013  max mem: 16335
+Epoch: [51] Total time: 0:04:39 (3.6769 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1994  data: 0.1835  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3293  data: 0.3117  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2472  data: 0.2314  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2839  data: 0.2677  max mem: 16335
+ Total time: 0:00:44 (0.2588 s / it)
+tensor(9.2537, device='cuda:0', dtype=torch.float64)
+Epoch: [52]  [ 0/76]  eta: 0:04:40  lr: 0.001000  loss: 136.5154 (136.5154)  time: 3.6924  data: 3.2354  max mem: 16335
+Epoch: [52]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 145.4618 (137.6691)  time: 3.4624  data: 3.0073  max mem: 16335
+Epoch: [52] Total time: 0:04:29 (3.5489 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2581  data: 0.2374  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2822  data: 0.2663  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2789  data: 0.2622  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2977  data: 0.2813  max mem: 16335
+ Total time: 0:00:44 (0.2576 s / it)
+tensor(9.3696, device='cuda:0', dtype=torch.float64)
+Epoch: [53]  [ 0/76]  eta: 0:04:12  lr: 0.001000  loss: 135.2149 (135.2149)  time: 3.3189  data: 2.8623  max mem: 16335
+Epoch: [53]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 155.8664 (139.1020)  time: 3.5154  data: 3.0602  max mem: 16335
+Epoch: [53] Total time: 0:04:23 (3.4725 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2447  data: 0.2260  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2947  data: 0.2783  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2518  data: 0.2360  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2899  data: 0.2740  max mem: 16335
+ Total time: 0:00:43 (0.2558 s / it)
+tensor(8.0650, device='cuda:0', dtype=torch.float64)
+Epoch: [54]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 129.8029 (129.8029)  time: 3.3881  data: 2.9312  max mem: 16335
+Epoch: [54]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 134.5072 (136.7711)  time: 3.4877  data: 3.0329  max mem: 16335
+Epoch: [54] Total time: 0:04:27 (3.5134 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1997  data: 0.1837  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2724  data: 0.2572  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2734  data: 0.2565  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2718  data: 0.2560  max mem: 16335
+ Total time: 0:00:43 (0.2538 s / it)
+tensor(7.2140, device='cuda:0', dtype=torch.float64)
+Epoch: [55]  [ 0/76]  eta: 0:04:22  lr: 0.001000  loss: 155.0625 (155.0625)  time: 3.4517  data: 2.9948  max mem: 16335
+Epoch: [55]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 129.9211 (135.5427)  time: 3.7820  data: 3.3265  max mem: 16335
+Epoch: [55] Total time: 0:04:34 (3.6110 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1980  data: 0.1821  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2787  data: 0.2628  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2876  data: 0.2714  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2905  data: 0.2751  max mem: 16335
+ Total time: 0:00:43 (0.2535 s / it)
+tensor(6.7499, device='cuda:0', dtype=torch.float64)
+Epoch: [56]  [ 0/76]  eta: 0:04:11  lr: 0.001000  loss: 137.2573 (137.2573)  time: 3.3121  data: 2.8551  max mem: 16335
+Epoch: [56]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 142.9718 (133.9935)  time: 3.4609  data: 3.0059  max mem: 16335
+Epoch: [56] Total time: 0:04:26 (3.5123 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1968  data: 0.1809  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.3383  data: 0.3205  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2886  data: 0.2718  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2952  data: 0.2790  max mem: 16335
+ Total time: 0:00:44 (0.2598 s / it)
+tensor(6.8617, device='cuda:0', dtype=torch.float64)
+Epoch: [57]  [ 0/76]  eta: 0:04:55  lr: 0.001000  loss: 126.8061 (126.8061)  time: 3.8843  data: 3.4279  max mem: 16335
+Epoch: [57]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 128.5927 (131.9157)  time: 3.6060  data: 3.1511  max mem: 16335
+Epoch: [57] Total time: 0:04:33 (3.5966 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1963  data: 0.1804  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2735  data: 0.2577  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2703  data: 0.2546  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2827  data: 0.2670  max mem: 16335
+ Total time: 0:00:43 (0.2523 s / it)
+tensor(7.3013, device='cuda:0', dtype=torch.float64)
+Epoch: [58]  [ 0/76]  eta: 0:04:12  lr: 0.001000  loss: 123.9170 (123.9170)  time: 3.3204  data: 2.8642  max mem: 16335
+Epoch: [58]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 126.2203 (131.5046)  time: 3.3549  data: 2.9001  max mem: 16335
+Epoch: [58] Total time: 0:04:27 (3.5169 s / it)
+  [  0/171]  eta: 0:00:54    time: 0.3164  data: 0.2988  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.3139  data: 0.2970  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2819  data: 0.2645  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3380  data: 0.3196  max mem: 16335
+ Total time: 0:00:47 (0.2799 s / it)
+tensor(6.6856, device='cuda:0', dtype=torch.float64)
+Epoch: [59]  [ 0/76]  eta: 0:04:35  lr: 0.001000  loss: 127.4109 (127.4109)  time: 3.6228  data: 3.1651  max mem: 16335
+Epoch: [59]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 125.7522 (129.3366)  time: 3.5414  data: 3.0863  max mem: 16335
+Epoch: [59] Total time: 0:04:24 (3.4830 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1968  data: 0.1803  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3288  data: 0.3114  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2460  data: 0.2301  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2980  data: 0.2815  max mem: 16335
+ Total time: 0:00:43 (0.2553 s / it)
+tensor(7.0228, device='cuda:0', dtype=torch.float64)
+Epoch: [60]  [ 0/76]  eta: 0:04:08  lr: 0.001000  loss: 113.1756 (113.1756)  time: 3.2678  data: 2.8117  max mem: 16335
+Epoch: [60]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 138.3276 (129.1551)  time: 3.4469  data: 2.9917  max mem: 16335
+Epoch: [60] Total time: 0:04:22 (3.4501 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2398  data: 0.2219  max mem: 16335
+  [ 80/171]  eta: 0:00:26    time: 0.3202  data: 0.3023  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.3048  data: 0.2867  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3149  data: 0.2978  max mem: 16335
+ Total time: 0:00:48 (0.2824 s / it)
+tensor(6.8867, device='cuda:0', dtype=torch.float64)
+Epoch: [61]  [ 0/76]  eta: 0:03:53  lr: 0.001000  loss: 146.6049 (146.6049)  time: 3.0676  data: 2.6112  max mem: 16335
+Epoch: [61]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 114.5947 (129.0849)  time: 3.5090  data: 3.0537  max mem: 16335
+Epoch: [61] Total time: 0:04:24 (3.4850 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1970  data: 0.1811  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2862  data: 0.2703  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2544  data: 0.2387  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2799  data: 0.2641  max mem: 16335
+ Total time: 0:00:41 (0.2438 s / it)
+tensor(7.2483, device='cuda:0', dtype=torch.float64)
+Epoch: [62]  [ 0/76]  eta: 0:04:16  lr: 0.001000  loss: 134.4346 (134.4346)  time: 3.3739  data: 2.9172  max mem: 16335
+Epoch: [62]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 127.2295 (126.4003)  time: 3.4294  data: 2.9743  max mem: 16335
+Epoch: [62] Total time: 0:04:23 (3.4694 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1947  data: 0.1789  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2726  data: 0.2569  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2778  data: 0.2610  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3148  data: 0.2978  max mem: 16335
+ Total time: 0:00:43 (0.2531 s / it)
+tensor(7.4440, device='cuda:0', dtype=torch.float64)
+Epoch: [63]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 117.0596 (117.0596)  time: 3.3868  data: 2.9298  max mem: 16335
+Epoch: [63]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 139.0260 (126.4662)  time: 3.4586  data: 3.0035  max mem: 16335
+Epoch: [63] Total time: 0:04:21 (3.4461 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1981  data: 0.1822  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2846  data: 0.2689  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2482  data: 0.2324  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2764  data: 0.2606  max mem: 16335
+ Total time: 0:00:42 (0.2465 s / it)
+tensor(7.1746, device='cuda:0', dtype=torch.float64)
+Epoch: [64]  [ 0/76]  eta: 0:04:04  lr: 0.001000  loss: 122.7281 (122.7281)  time: 3.2119  data: 2.7552  max mem: 16335
+Epoch: [64]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 115.0976 (123.9161)  time: 3.4257  data: 2.9706  max mem: 16335
+Epoch: [64] Total time: 0:04:24 (3.4783 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1946  data: 0.1788  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2726  data: 0.2568  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2626  data: 0.2464  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2818  data: 0.2661  max mem: 16335
+ Total time: 0:00:41 (0.2436 s / it)
+tensor(7.1912, device='cuda:0', dtype=torch.float64)
+Epoch: [65]  [ 0/76]  eta: 0:03:59  lr: 0.001000  loss: 129.2820 (129.2820)  time: 3.1499  data: 2.6929  max mem: 16335
+Epoch: [65]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 131.9502 (123.5707)  time: 3.4407  data: 2.9857  max mem: 16335
+Epoch: [65] Total time: 0:04:24 (3.4822 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1975  data: 0.1816  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2768  data: 0.2614  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2881  data: 0.2713  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3125  data: 0.2955  max mem: 16335
+ Total time: 0:00:43 (0.2563 s / it)
+tensor(7.3774, device='cuda:0', dtype=torch.float64)
+Epoch: [66]  [ 0/76]  eta: 0:03:54  lr: 0.001000  loss: 116.7580 (116.7580)  time: 3.0851  data: 2.6284  max mem: 16335
+Epoch: [66]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 123.3245 (121.9218)  time: 3.4647  data: 3.0097  max mem: 16335
+Epoch: [66] Total time: 0:04:26 (3.5001 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1986  data: 0.1826  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3122  data: 0.2947  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2770  data: 0.2605  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2809  data: 0.2651  max mem: 16335
+ Total time: 0:00:44 (0.2595 s / it)
+tensor(7.1814, device='cuda:0', dtype=torch.float64)
+Epoch: [67]  [ 0/76]  eta: 0:04:25  lr: 0.001000  loss: 131.0680 (131.0680)  time: 3.4899  data: 3.0331  max mem: 16335
+Epoch: [67]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 143.5826 (121.7053)  time: 3.4379  data: 2.9829  max mem: 16335
+Epoch: [67] Total time: 0:04:23 (3.4636 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1977  data: 0.1816  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.2978  data: 0.2816  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2972  data: 0.2796  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2987  data: 0.2819  max mem: 16335
+ Total time: 0:00:47 (0.2790 s / it)
+tensor(7.4193, device='cuda:0', dtype=torch.float64)
+Epoch: [68]  [ 0/76]  eta: 0:04:29  lr: 0.001000  loss: 115.3714 (115.3714)  time: 3.5514  data: 3.0953  max mem: 16335
+Epoch: [68]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 124.7759 (122.5515)  time: 3.5473  data: 3.0922  max mem: 16335
+Epoch: [68] Total time: 0:04:25 (3.4878 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2048  data: 0.1889  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2808  data: 0.2650  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2479  data: 0.2321  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2782  data: 0.2624  max mem: 16335
+ Total time: 0:00:43 (0.2531 s / it)
+tensor(7.1376, device='cuda:0', dtype=torch.float64)
+Epoch: [69]  [ 0/76]  eta: 0:04:12  lr: 0.001000  loss: 130.7535 (130.7535)  time: 3.3236  data: 2.8662  max mem: 16335
+Epoch: [69]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 126.0723 (120.7029)  time: 3.4990  data: 3.0437  max mem: 16335
+Epoch: [69] Total time: 0:04:28 (3.5363 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1954  data: 0.1796  max mem: 16335
+  [ 80/171]  eta: 0:00:23    time: 0.2854  data: 0.2692  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2477  data: 0.2319  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2713  data: 0.2556  max mem: 16335
+ Total time: 0:00:42 (0.2479 s / it)
+tensor(7.0746, device='cuda:0', dtype=torch.float64)
+Epoch: [70]  [ 0/76]  eta: 0:04:11  lr: 0.001000  loss: 116.6288 (116.6288)  time: 3.3041  data: 2.8477  max mem: 16335
+Epoch: [70]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 126.0438 (120.4826)  time: 3.5300  data: 3.0750  max mem: 16335
+Epoch: [70] Total time: 0:04:33 (3.5991 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1959  data: 0.1800  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.3739  data: 0.3549  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2522  data: 0.2370  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2850  data: 0.2694  max mem: 16335
+ Total time: 0:00:45 (0.2674 s / it)
+tensor(6.9543, device='cuda:0', dtype=torch.float64)
+Epoch: [71]  [ 0/76]  eta: 0:04:05  lr: 0.001000  loss: 107.8129 (107.8129)  time: 3.2311  data: 2.7740  max mem: 16335
+Epoch: [71]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 113.4873 (118.7089)  time: 3.6767  data: 3.2212  max mem: 16335
+Epoch: [71] Total time: 0:04:34 (3.6079 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2286  data: 0.2116  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.2965  data: 0.2803  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2647  data: 0.2479  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2773  data: 0.2612  max mem: 16335
+ Total time: 0:00:44 (0.2624 s / it)
+tensor(7.0836, device='cuda:0', dtype=torch.float64)
+Epoch: [72]  [ 0/76]  eta: 0:04:26  lr: 0.001000  loss: 114.0932 (114.0932)  time: 3.5044  data: 3.0474  max mem: 16335
+Epoch: [72]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 114.0085 (116.8390)  time: 3.6962  data: 3.2408  max mem: 16335
+Epoch: [72] Total time: 0:04:34 (3.6157 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2004  data: 0.1845  max mem: 16335
+  [ 80/171]  eta: 0:00:22    time: 0.2781  data: 0.2620  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2563  data: 0.2401  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2756  data: 0.2597  max mem: 16335
+ Total time: 0:00:43 (0.2527 s / it)
+tensor(6.5693, device='cuda:0', dtype=torch.float64)
+Epoch: [73]  [ 0/76]  eta: 0:04:55  lr: 0.001000  loss: 121.7242 (121.7242)  time: 3.8851  data: 3.4278  max mem: 16335
+Epoch: [73]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 113.7000 (115.6790)  time: 3.8013  data: 3.3458  max mem: 16335
+Epoch: [73] Total time: 0:04:38 (3.6630 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2645  data: 0.2468  max mem: 16335
+  [ 80/171]  eta: 0:00:27    time: 0.3284  data: 0.3109  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.3140  data: 0.2793  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3637  data: 0.3287  max mem: 16335
+ Total time: 0:00:49 (0.2900 s / it)
+tensor(6.7639, device='cuda:0', dtype=torch.float64)
+Epoch: [74]  [ 0/76]  eta: 0:05:40  lr: 0.001000  loss: 125.9751 (125.9751)  time: 4.4802  data: 3.5014  max mem: 16335
+Epoch: [74]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 138.1682 (116.0970)  time: 3.9222  data: 3.4660  max mem: 16335
+Epoch: [74] Total time: 0:04:51 (3.8382 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2414  data: 0.2241  max mem: 16335
+  [ 80/171]  eta: 0:00:26    time: 0.2872  data: 0.2710  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.3291  data: 0.3098  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3685  data: 0.3491  max mem: 16335
+ Total time: 0:00:51 (0.3018 s / it)
+tensor(6.9117, device='cuda:0', dtype=torch.float64)
+Epoch: [75]  [ 0/76]  eta: 0:06:04  lr: 0.001000  loss: 121.9191 (121.9191)  time: 4.7938  data: 4.3357  max mem: 16335
+Epoch: [75]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 113.7215 (116.5861)  time: 3.6784  data: 3.2227  max mem: 16335
+Epoch: [75] Total time: 0:04:48 (3.8026 s / it)
+  [  0/171]  eta: 0:00:42    time: 0.2494  data: 0.2176  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.2836  data: 0.2676  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.3113  data: 0.2938  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3036  data: 0.2875  max mem: 16335
+ Total time: 0:00:48 (0.2809 s / it)
+tensor(7.0470, device='cuda:0', dtype=torch.float64)
+Epoch: [76]  [ 0/76]  eta: 0:04:29  lr: 0.001000  loss: 118.9720 (118.9720)  time: 3.5436  data: 3.0862  max mem: 16335
+Epoch: [76]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 118.3123 (116.1707)  time: 3.4710  data: 3.0160  max mem: 16335
+Epoch: [76] Total time: 0:04:37 (3.6577 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2007  data: 0.1849  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.3460  data: 0.3282  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2850  data: 0.2679  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2845  data: 0.2684  max mem: 16335
+ Total time: 0:00:46 (0.2712 s / it)
+tensor(7.3444, device='cuda:0', dtype=torch.float64)
+Epoch: [77]  [ 0/76]  eta: 0:04:55  lr: 0.001000  loss: 108.0059 (108.0059)  time: 3.8856  data: 3.4286  max mem: 16335
+Epoch: [77]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 109.8736 (114.5182)  time: 3.5859  data: 3.1305  max mem: 16335
+Epoch: [77] Total time: 0:04:32 (3.5898 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1814  max mem: 16335
+  [ 80/171]  eta: 0:00:28    time: 0.3456  data: 0.3121  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.3207  data: 0.2875  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3610  data: 0.3274  max mem: 16335
+ Total time: 0:00:52 (0.3074 s / it)
+tensor(6.8833, device='cuda:0', dtype=torch.float64)
+Epoch: [78]  [ 0/76]  eta: 0:04:58  lr: 0.001000  loss: 107.3866 (107.3866)  time: 3.9255  data: 2.9679  max mem: 16335
+Epoch: [78]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 107.3610 (114.3274)  time: 4.0441  data: 3.0633  max mem: 16335
+Epoch: [78] Total time: 0:05:12 (4.1094 s / it)
+  [  0/171]  eta: 0:00:36    time: 0.2159  data: 0.1809  max mem: 16335
+  [ 80/171]  eta: 0:00:26    time: 0.3493  data: 0.3148  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2942  data: 0.2593  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2976  data: 0.2612  max mem: 16335
+ Total time: 0:00:49 (0.2886 s / it)
+tensor(7.1647, device='cuda:0', dtype=torch.float64)
+Epoch: [79]  [ 0/76]  eta: 0:05:01  lr: 0.001000  loss: 111.4679 (111.4679)  time: 3.9678  data: 2.9793  max mem: 16335
+Epoch: [79]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 123.1284 (112.9001)  time: 4.0956  data: 3.1264  max mem: 16335
+Epoch: [79] Total time: 0:05:23 (4.2561 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2233  data: 0.1841  max mem: 16335
+  [ 80/171]  eta: 0:00:26    time: 0.3089  data: 0.2752  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2957  data: 0.2631  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.3268  data: 0.2906  max mem: 16335
+ Total time: 0:00:49 (0.2889 s / it)
+tensor(7.3139, device='cuda:0', dtype=torch.float64)
+Epoch: [80]  [ 0/76]  eta: 0:04:55  lr: 0.001000  loss: 114.6637 (114.6637)  time: 3.8860  data: 2.8985  max mem: 16335
+Epoch: [80]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 110.5007 (113.0824)  time: 3.6989  data: 3.1160  max mem: 16335
+Epoch: [80] Total time: 0:05:12 (4.1151 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2432  data: 0.2265  max mem: 16335
+  [ 80/171]  eta: 0:00:24    time: 0.2931  data: 0.2768  max mem: 16335
+  [160/171]  eta: 0:00:02    time: 0.2661  data: 0.2492  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2738  data: 0.2581  max mem: 16335
+ Total time: 0:00:45 (0.2646 s / it)
+tensor(6.9145, device='cuda:0', dtype=torch.float64)
+Epoch: [81]  [ 0/76]  eta: 0:04:06  lr: 0.001000  loss: 114.4653 (114.4653)  time: 3.2494  data: 2.7918  max mem: 16335
+Epoch: [81]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 112.7847 (113.1748)  time: 4.1330  data: 3.1828  max mem: 16335
+Epoch: [81] Total time: 0:05:07 (4.0445 s / it)
+  [  0/171]  eta: 0:00:46    time: 0.2707  data: 0.2331  max mem: 16335
+  [ 80/171]  eta: 0:00:25    time: 0.2936  data: 0.2580  max mem: 16335
+  [160/171]  eta: 0:00:03    time: 0.2755  data: 0.2400  max mem: 16335
+  [170/171]  eta: 0:00:00    time: 0.2981  data: 0.2651  max mem: 16335
+ Total time: 0:00:47 (0.2759 s / it)
+tensor(6.9529, device='cuda:0', dtype=torch.float64)
+Epoch: [82]  [ 0/76]  eta: 0:05:16  lr: 0.001000  loss: 107.1522 (107.1522)  time: 4.1582  data: 3.1801  max mem: 16336
+Epoch: [82]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 114.9796 (109.6101)  time: 4.1035  data: 3.1652  max mem: 16337
+Epoch: [82] Total time: 0:05:11 (4.1019 s / it)
+  [  0/171]  eta: 0:00:48    time: 0.2844  data: 0.2488  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2980  data: 0.2659  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3100  data: 0.2743  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3216  data: 0.2858  max mem: 16337
+ Total time: 0:00:49 (0.2894 s / it)
+tensor(6.9276, device='cuda:0', dtype=torch.float64)
+Epoch: [83]  [ 0/76]  eta: 0:05:28  lr: 0.001000  loss: 126.0024 (126.0024)  time: 4.3235  data: 3.3431  max mem: 16337
+Epoch: [83]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 107.3634 (110.7515)  time: 4.3888  data: 3.4279  max mem: 16337
+Epoch: [83] Total time: 0:05:16 (4.1656 s / it)
+  [  0/171]  eta: 0:00:53    time: 0.3115  data: 0.2766  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3158  data: 0.2796  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3038  data: 0.2677  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3347  data: 0.2983  max mem: 16337
+ Total time: 0:00:48 (0.2825 s / it)
+tensor(7.0486, device='cuda:0', dtype=torch.float64)
+Epoch: [84]  [ 0/76]  eta: 0:05:39  lr: 0.001000  loss: 107.0316 (107.0316)  time: 4.4659  data: 3.4713  max mem: 16337
+Epoch: [84]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 115.3011 (108.5662)  time: 3.5724  data: 3.1163  max mem: 16337
+Epoch: [84] Total time: 0:05:00 (3.9546 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1953  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3508  data: 0.3185  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2984  data: 0.2646  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3329  data: 0.2997  max mem: 16337
+ Total time: 0:00:48 (0.2837 s / it)
+tensor(6.6269, device='cuda:0', dtype=torch.float64)
+Epoch: [85]  [ 0/76]  eta: 0:05:12  lr: 0.001000  loss: 101.2186 (101.2186)  time: 4.1071  data: 3.1508  max mem: 16337
+Epoch: [85]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 108.1516 (107.7619)  time: 3.6959  data: 3.1058  max mem: 16337
+Epoch: [85] Total time: 0:04:58 (3.9309 s / it)
+  [  0/171]  eta: 0:00:49    time: 0.2905  data: 0.2746  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3285  data: 0.3010  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2490  data: 0.2333  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2821  data: 0.2663  max mem: 16337
+ Total time: 0:00:46 (0.2706 s / it)
+tensor(6.7134, device='cuda:0', dtype=torch.float64)
+Epoch: [86]  [ 0/76]  eta: 0:04:00  lr: 0.001000  loss: 111.5113 (111.5113)  time: 3.1592  data: 2.7005  max mem: 16337
+Epoch: [86]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 119.8668 (107.1368)  time: 3.6799  data: 3.0260  max mem: 16337
+Epoch: [86] Total time: 0:04:40 (3.6847 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2176  data: 0.1859  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3089  data: 0.2923  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2641  data: 0.2480  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3196  data: 0.3021  max mem: 16337
+ Total time: 0:00:45 (0.2666 s / it)
+tensor(6.9606, device='cuda:0', dtype=torch.float64)
+Epoch: [87]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 98.3710 (98.3710)  time: 3.3841  data: 2.9269  max mem: 16337
+Epoch: [87]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 108.2217 (106.8884)  time: 3.7223  data: 3.1186  max mem: 16337
+Epoch: [87] Total time: 0:04:44 (3.7377 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1978  data: 0.1807  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2927  data: 0.2744  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2635  data: 0.2380  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2806  data: 0.2639  max mem: 16337
+ Total time: 0:00:45 (0.2670 s / it)
+tensor(6.9512, device='cuda:0', dtype=torch.float64)
+Epoch: [88]  [ 0/76]  eta: 0:04:24  lr: 0.001000  loss: 118.5967 (118.5967)  time: 3.4833  data: 3.0249  max mem: 16337
+Epoch: [88]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 109.0140 (106.0867)  time: 3.8223  data: 3.1417  max mem: 16337
+Epoch: [88] Total time: 0:04:46 (3.7678 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2261  data: 0.1908  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2825  data: 0.2663  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2992  data: 0.2815  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3130  data: 0.2958  max mem: 16337
+ Total time: 0:00:46 (0.2738 s / it)
+tensor(6.7280, device='cuda:0', dtype=torch.float64)
+Epoch: [89]  [ 0/76]  eta: 0:04:52  lr: 0.001000  loss: 94.4473 (94.4473)  time: 3.8511  data: 2.8895  max mem: 16337
+Epoch: [89]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 100.7150 (104.7085)  time: 3.6844  data: 3.1162  max mem: 16337
+Epoch: [89] Total time: 0:04:51 (3.8308 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1953  data: 0.1795  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2965  data: 0.2656  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2738  data: 0.2572  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3166  data: 0.3000  max mem: 16337
+ Total time: 0:00:46 (0.2703 s / it)
+tensor(6.7242, device='cuda:0', dtype=torch.float64)
+Epoch: [90]  [ 0/76]  eta: 0:04:31  lr: 0.001000  loss: 96.2571 (96.2571)  time: 3.5693  data: 3.1113  max mem: 16337
+Epoch: [90]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 99.8161 (106.3154)  time: 3.7724  data: 3.0773  max mem: 16337
+Epoch: [90] Total time: 0:04:44 (3.7461 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2515  data: 0.2338  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2811  data: 0.2661  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2730  data: 0.2484  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3068  data: 0.2737  max mem: 16337
+ Total time: 0:00:44 (0.2592 s / it)
+tensor(6.8943, device='cuda:0', dtype=torch.float64)
+Epoch: [91]  [ 0/76]  eta: 0:05:10  lr: 0.001000  loss: 109.8015 (109.8015)  time: 4.0791  data: 3.1236  max mem: 16337
+Epoch: [91]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 96.4917 (103.8168)  time: 3.7057  data: 3.1027  max mem: 16337
+Epoch: [91] Total time: 0:04:45 (3.7522 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2281  data: 0.2110  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3712  data: 0.3391  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2490  data: 0.2333  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2798  data: 0.2641  max mem: 16337
+ Total time: 0:00:47 (0.2781 s / it)
+tensor(6.8194, device='cuda:0', dtype=torch.float64)
+Epoch: [92]  [ 0/76]  eta: 0:04:05  lr: 0.001000  loss: 97.2343 (97.2343)  time: 3.2262  data: 2.7682  max mem: 16337
+Epoch: [92]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 96.4306 (103.2474)  time: 3.7694  data: 3.0850  max mem: 16337
+Epoch: [92] Total time: 0:04:42 (3.7182 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1972  data: 0.1813  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2940  data: 0.2785  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2558  data: 0.2344  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2908  data: 0.2604  max mem: 16337
+ Total time: 0:00:42 (0.2487 s / it)
+tensor(7.0874, device='cuda:0', dtype=torch.float64)
+Epoch: [93]  [ 0/76]  eta: 0:05:17  lr: 0.001000  loss: 108.1091 (108.1091)  time: 4.1789  data: 3.2471  max mem: 16337
+Epoch: [93]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 119.3299 (102.8215)  time: 3.6375  data: 3.0341  max mem: 16337
+Epoch: [93] Total time: 0:04:38 (3.6624 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2092  data: 0.1913  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2969  data: 0.2678  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2550  data: 0.2355  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2740  data: 0.2583  max mem: 16337
+ Total time: 0:00:44 (0.2619 s / it)
+tensor(6.8377, device='cuda:0', dtype=torch.float64)
+Epoch: [94]  [ 0/76]  eta: 0:04:00  lr: 0.001000  loss: 94.1663 (94.1663)  time: 3.1647  data: 2.7062  max mem: 16337
+Epoch: [94]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 99.3107 (101.2125)  time: 3.7659  data: 3.0885  max mem: 16337
+Epoch: [94] Total time: 0:04:41 (3.6991 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2390  data: 0.2108  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.2962  data: 0.2796  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2564  data: 0.2404  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2732  data: 0.2575  max mem: 16337
+ Total time: 0:00:49 (0.2879 s / it)
+tensor(6.3939, device='cuda:0', dtype=torch.float64)
+Epoch: [95]  [ 0/76]  eta: 0:04:58  lr: 0.001000  loss: 96.6338 (96.6338)  time: 3.9216  data: 2.9728  max mem: 16337
+Epoch: [95]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 97.7592 (101.2459)  time: 3.6531  data: 3.0715  max mem: 16337
+Epoch: [95] Total time: 0:04:42 (3.7167 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2003  data: 0.1844  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2783  data: 0.2588  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2852  data: 0.2579  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3295  data: 0.3095  max mem: 16337
+ Total time: 0:00:45 (0.2648 s / it)
+tensor(6.5119, device='cuda:0', dtype=torch.float64)
+Epoch: [96]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 112.2440 (112.2440)  time: 3.3877  data: 2.9296  max mem: 16337
+Epoch: [96]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 100.5876 (101.6361)  time: 3.7834  data: 3.1128  max mem: 16337
+Epoch: [96] Total time: 0:04:44 (3.7400 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2199  data: 0.1845  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2944  data: 0.2779  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2478  data: 0.2321  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3011  data: 0.2845  max mem: 16337
+ Total time: 0:00:44 (0.2578 s / it)
+tensor(6.9654, device='cuda:0', dtype=torch.float64)
+Epoch: [97]  [ 0/76]  eta: 0:04:10  lr: 0.001000  loss: 90.3977 (90.3977)  time: 3.2926  data: 2.8352  max mem: 16337
+Epoch: [97]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 100.0474 (99.0928)  time: 3.7754  data: 3.1944  max mem: 16337
+Epoch: [97] Total time: 0:04:48 (3.7995 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1975  data: 0.1816  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3407  data: 0.3075  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2954  data: 0.2778  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2873  data: 0.2710  max mem: 16337
+ Total time: 0:00:48 (0.2818 s / it)
+tensor(6.5094, device='cuda:0', dtype=torch.float64)
+Epoch: [98]  [ 0/76]  eta: 0:04:32  lr: 0.001000  loss: 91.0707 (91.0707)  time: 3.5832  data: 3.1252  max mem: 16337
+Epoch: [98]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 97.9911 (99.3459)  time: 3.7032  data: 3.0453  max mem: 16337
+Epoch: [98] Total time: 0:04:40 (3.6889 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2325  data: 0.1962  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2843  data: 0.2686  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3005  data: 0.2828  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3214  data: 0.3041  max mem: 16337
+ Total time: 0:00:44 (0.2631 s / it)
+tensor(6.7694, device='cuda:0', dtype=torch.float64)
+Epoch: [99]  [ 0/76]  eta: 0:04:39  lr: 0.001000  loss: 91.2313 (91.2313)  time: 3.6733  data: 2.7143  max mem: 16337
+Epoch: [99]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 97.6454 (98.6499)  time: 3.8161  data: 3.2103  max mem: 16337
+Epoch: [99] Total time: 0:04:46 (3.7719 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1806  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3166  data: 0.2849  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2722  data: 0.2560  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3044  data: 0.2880  max mem: 16337
+ Total time: 0:00:46 (0.2695 s / it)
+tensor(6.7653, device='cuda:0', dtype=torch.float64)
+Epoch: [100]  [ 0/76]  eta: 0:04:18  lr: 0.001000  loss: 88.1365 (88.1365)  time: 3.3952  data: 2.9375  max mem: 16337
+Epoch: [100]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 96.9538 (99.0880)  time: 3.6475  data: 3.0055  max mem: 16337
+Epoch: [100] Total time: 0:04:37 (3.6504 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2177  data: 0.1822  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2772  data: 0.2614  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2631  data: 0.2473  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2864  data: 0.2706  max mem: 16337
+ Total time: 0:00:44 (0.2599 s / it)
+tensor(6.8145, device='cuda:0', dtype=torch.float64)
+Epoch: [101]  [ 0/76]  eta: 0:04:28  lr: 0.001000  loss: 101.3307 (101.3307)  time: 3.5306  data: 3.0733  max mem: 16337
+Epoch: [101]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 118.2758 (98.3212)  time: 3.5538  data: 2.9485  max mem: 16337
+Epoch: [101] Total time: 0:04:41 (3.7022 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1982  data: 0.1823  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2728  data: 0.2571  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3017  data: 0.2676  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3363  data: 0.3042  max mem: 16337
+ Total time: 0:00:46 (0.2736 s / it)
+tensor(6.4869, device='cuda:0', dtype=torch.float64)
+Epoch: [102]  [ 0/76]  eta: 0:05:01  lr: 0.001000  loss: 99.6857 (99.6857)  time: 3.9723  data: 3.5141  max mem: 16337
+Epoch: [102]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 92.4078 (95.8790)  time: 3.6928  data: 3.0646  max mem: 16337
+Epoch: [102] Total time: 0:04:44 (3.7369 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2184  data: 0.1834  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2728  data: 0.2575  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2495  data: 0.2337  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2845  data: 0.2683  max mem: 16337
+ Total time: 0:00:43 (0.2543 s / it)
+tensor(6.4650, device='cuda:0', dtype=torch.float64)
+Epoch: [103]  [ 0/76]  eta: 0:04:50  lr: 0.001000  loss: 84.3375 (84.3375)  time: 3.8208  data: 3.3637  max mem: 16337
+Epoch: [103]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 92.6572 (96.1179)  time: 3.5758  data: 2.9826  max mem: 16337
+Epoch: [103] Total time: 0:04:46 (3.7701 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1807  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2752  data: 0.2594  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3059  data: 0.2716  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3411  data: 0.3087  max mem: 16337
+ Total time: 0:00:44 (0.2622 s / it)
+tensor(6.5548, device='cuda:0', dtype=torch.float64)
+Epoch: [104]  [ 0/76]  eta: 0:05:17  lr: 0.001000  loss: 93.0397 (93.0397)  time: 4.1818  data: 3.7230  max mem: 16337
+Epoch: [104]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 96.5972 (95.5842)  time: 3.5847  data: 2.9559  max mem: 16337
+Epoch: [104] Total time: 0:04:42 (3.7115 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2165  data: 0.1810  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3415  data: 0.3202  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2546  data: 0.2384  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3078  data: 0.2910  max mem: 16337
+ Total time: 0:00:47 (0.2765 s / it)
+tensor(6.8841, device='cuda:0', dtype=torch.float64)
+Epoch: [105]  [ 0/76]  eta: 0:04:58  lr: 0.001000  loss: 98.6445 (98.6445)  time: 3.9281  data: 3.4703  max mem: 16337
+Epoch: [105]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 95.0279 (96.0409)  time: 3.6616  data: 3.0808  max mem: 16337
+Epoch: [105] Total time: 0:04:49 (3.8038 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2028  data: 0.1868  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3131  data: 0.2930  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2995  data: 0.2710  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3124  data: 0.2912  max mem: 16337
+ Total time: 0:00:46 (0.2709 s / it)
+tensor(6.5661, device='cuda:0', dtype=torch.float64)
+Epoch: [106]  [ 0/76]  eta: 0:04:53  lr: 0.001000  loss: 94.9671 (94.9671)  time: 3.8620  data: 3.4023  max mem: 16337
+Epoch: [106]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 95.6189 (94.3407)  time: 3.7570  data: 3.0840  max mem: 16337
+Epoch: [106] Total time: 0:04:45 (3.7517 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2224  data: 0.1864  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3432  data: 0.3250  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2608  data: 0.2451  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2851  data: 0.2694  max mem: 16337
+ Total time: 0:00:47 (0.2791 s / it)
+tensor(6.7333, device='cuda:0', dtype=torch.float64)
+Epoch: [107]  [ 0/76]  eta: 0:04:54  lr: 0.001000  loss: 83.0806 (83.0806)  time: 3.8790  data: 2.9385  max mem: 16337
+Epoch: [107]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 89.0533 (94.6755)  time: 3.6448  data: 3.0398  max mem: 16337
+Epoch: [107] Total time: 0:04:49 (3.8061 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2370  data: 0.2206  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3112  data: 0.2772  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2956  data: 0.2781  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3234  data: 0.3062  max mem: 16337
+ Total time: 0:00:46 (0.2727 s / it)
+tensor(6.7611, device='cuda:0', dtype=torch.float64)
+Epoch: [108]  [ 0/76]  eta: 0:05:08  lr: 0.001000  loss: 81.3661 (81.3661)  time: 4.0627  data: 3.6043  max mem: 16337
+Epoch: [108]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 94.6219 (92.9278)  time: 3.8948  data: 3.2174  max mem: 16337
+Epoch: [108] Total time: 0:04:43 (3.7273 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2003  data: 0.1844  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3000  data: 0.2844  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2733  data: 0.2523  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2947  data: 0.2650  max mem: 16337
+ Total time: 0:00:44 (0.2625 s / it)
+tensor(6.3255, device='cuda:0', dtype=torch.float64)
+Epoch: [109]  [ 0/76]  eta: 0:04:49  lr: 0.001000  loss: 83.4755 (83.4755)  time: 3.8053  data: 2.8527  max mem: 16337
+Epoch: [109]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 85.1711 (91.6664)  time: 3.8125  data: 3.2312  max mem: 16337
+Epoch: [109] Total time: 0:04:45 (3.7594 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2270  data: 0.2100  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3424  data: 0.3098  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2872  data: 0.2707  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2975  data: 0.2814  max mem: 16337
+ Total time: 0:00:48 (0.2807 s / it)
+tensor(6.5448, device='cuda:0', dtype=torch.float64)
+Epoch: [110]  [ 0/76]  eta: 0:04:29  lr: 0.001000  loss: 98.0640 (98.0640)  time: 3.5479  data: 3.0900  max mem: 16337
+Epoch: [110]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 102.6954 (91.7706)  time: 3.9448  data: 3.2961  max mem: 16337
+Epoch: [110] Total time: 0:04:48 (3.7948 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1955  data: 0.1802  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3266  data: 0.3093  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2943  data: 0.2605  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3097  data: 0.2761  max mem: 16337
+ Total time: 0:00:46 (0.2747 s / it)
+tensor(6.6728, device='cuda:0', dtype=torch.float64)
+Epoch: [111]  [ 0/76]  eta: 0:05:01  lr: 0.001000  loss: 80.9680 (80.9680)  time: 3.9654  data: 3.0000  max mem: 16337
+Epoch: [111]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 94.1850 (91.2321)  time: 3.6106  data: 3.0219  max mem: 16337
+Epoch: [111] Total time: 0:04:42 (3.7190 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1988  data: 0.1828  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3006  data: 0.2669  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2730  data: 0.2562  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2723  data: 0.2567  max mem: 16337
+ Total time: 0:00:45 (0.2662 s / it)
+tensor(6.6837, device='cuda:0', dtype=torch.float64)
+Epoch: [112]  [ 0/76]  eta: 0:04:28  lr: 0.001000  loss: 92.2776 (92.2776)  time: 3.5300  data: 3.0725  max mem: 16337
+Epoch: [112]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 99.7672 (91.9397)  time: 3.7472  data: 3.0941  max mem: 16337
+Epoch: [112] Total time: 0:04:44 (3.7396 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2025  data: 0.1865  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2687  data: 0.2538  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2742  data: 0.2404  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2918  data: 0.2571  max mem: 16337
+ Total time: 0:00:43 (0.2534 s / it)
+tensor(6.6829, device='cuda:0', dtype=torch.float64)
+Epoch: [113]  [ 0/76]  eta: 0:05:08  lr: 0.001000  loss: 78.9142 (78.9142)  time: 4.0528  data: 3.0917  max mem: 16337
+Epoch: [113]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 107.4860 (89.4368)  time: 3.9512  data: 3.0801  max mem: 16337
+Epoch: [113] Total time: 0:04:48 (3.7977 s / it)
+  [  0/171]  eta: 0:00:47    time: 0.2766  data: 0.2414  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3098  data: 0.2774  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2700  data: 0.2365  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3155  data: 0.2819  max mem: 16337
+ Total time: 0:00:47 (0.2806 s / it)
+tensor(6.5740, device='cuda:0', dtype=torch.float64)
+Epoch: [114]  [ 0/76]  eta: 0:05:32  lr: 0.001000  loss: 77.0843 (77.0843)  time: 4.3757  data: 3.4150  max mem: 16337
+Epoch: [114]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 105.7377 (87.5748)  time: 4.1242  data: 3.1694  max mem: 16337
+Epoch: [114] Total time: 0:05:17 (4.1796 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2187  data: 0.1824  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2927  data: 0.2608  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2938  data: 0.2605  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3266  data: 0.2940  max mem: 16337
+ Total time: 0:00:49 (0.2882 s / it)
+tensor(6.7505, device='cuda:0', dtype=torch.float64)
+Epoch: [115]  [ 0/76]  eta: 0:05:18  lr: 0.001000  loss: 82.2897 (82.2897)  time: 4.1918  data: 3.2237  max mem: 16337
+Epoch: [115]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 85.9823 (89.0395)  time: 4.1621  data: 3.2057  max mem: 16337
+Epoch: [115] Total time: 0:05:17 (4.1754 s / it)
+  [  0/171]  eta: 0:00:54    time: 0.3199  data: 0.2862  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3600  data: 0.3282  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2962  data: 0.2616  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3100  data: 0.2769  max mem: 16337
+ Total time: 0:00:50 (0.2954 s / it)
+tensor(6.6270, device='cuda:0', dtype=torch.float64)
+Epoch: [116]  [ 0/76]  eta: 0:05:43  lr: 0.001000  loss: 79.2949 (79.2949)  time: 4.5255  data: 3.5621  max mem: 16337
+Epoch: [116]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 103.2741 (86.9286)  time: 4.5225  data: 3.5747  max mem: 16337
+Epoch: [116] Total time: 0:05:31 (4.3607 s / it)
+  [  0/171]  eta: 0:00:53    time: 0.3102  data: 0.2734  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2949  data: 0.2606  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2935  data: 0.2598  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2978  data: 0.2654  max mem: 16337
+ Total time: 0:00:48 (0.2860 s / it)
+tensor(6.6645, device='cuda:0', dtype=torch.float64)
+Epoch: [117]  [ 0/76]  eta: 0:05:07  lr: 0.001000  loss: 88.3154 (88.3154)  time: 4.0436  data: 3.0726  max mem: 16337
+Epoch: [117]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 88.7401 (87.1953)  time: 4.2008  data: 3.3900  max mem: 16337
+Epoch: [117] Total time: 0:05:20 (4.2198 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1969  data: 0.1810  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2914  data: 0.2585  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2768  data: 0.2601  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3341  data: 0.3173  max mem: 16337
+ Total time: 0:00:46 (0.2716 s / it)
+tensor(6.4734, device='cuda:0', dtype=torch.float64)
+Epoch: [118]  [ 0/76]  eta: 0:04:13  lr: 0.001000  loss: 107.6161 (107.6161)  time: 3.3311  data: 2.8723  max mem: 16337
+Epoch: [118]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 82.1306 (86.2477)  time: 4.1188  data: 3.1736  max mem: 16337
+Epoch: [118] Total time: 0:05:04 (4.0001 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2285  data: 0.2114  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3198  data: 0.2856  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2688  data: 0.2347  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2932  data: 0.2606  max mem: 16337
+ Total time: 0:00:49 (0.2903 s / it)
+tensor(6.6693, device='cuda:0', dtype=torch.float64)
+Epoch: [119]  [ 0/76]  eta: 0:04:44  lr: 0.001000  loss: 79.0703 (79.0703)  time: 3.7411  data: 2.7728  max mem: 16337
+Epoch: [119]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 95.1881 (85.4462)  time: 4.2717  data: 3.3392  max mem: 16337
+Epoch: [119] Total time: 0:05:20 (4.2147 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2426  data: 0.2102  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3190  data: 0.2845  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3116  data: 0.2789  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3202  data: 0.2859  max mem: 16337
+ Total time: 0:00:49 (0.2895 s / it)
+tensor(6.4631, device='cuda:0', dtype=torch.float64)
+Epoch: [120]  [ 0/76]  eta: 0:04:54  lr: 0.001000  loss: 84.9113 (84.9113)  time: 3.8760  data: 2.9169  max mem: 16337
+Epoch: [120]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 110.9242 (87.1545)  time: 4.7195  data: 3.7890  max mem: 16337
+Epoch: [120] Total time: 0:05:38 (4.4558 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2281  data: 0.1917  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3443  data: 0.3107  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3109  data: 0.2779  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3248  data: 0.2910  max mem: 16337
+ Total time: 0:00:51 (0.3027 s / it)
+tensor(6.5854, device='cuda:0', dtype=torch.float64)
+Epoch: [121]  [ 0/76]  eta: 0:05:30  lr: 0.001000  loss: 80.6843 (80.6843)  time: 4.3547  data: 3.3937  max mem: 16337
+Epoch: [121]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 74.2591 (84.6088)  time: 4.3100  data: 3.3593  max mem: 16337
+Epoch: [121] Total time: 0:05:50 (4.6176 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2540  data: 0.2180  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2968  data: 0.2632  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2706  data: 0.2361  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3068  data: 0.2747  max mem: 16337
+ Total time: 0:00:46 (0.2729 s / it)
+tensor(6.7210, device='cuda:0', dtype=torch.float64)
+Epoch: [122]  [ 0/76]  eta: 0:05:36  lr: 0.001000  loss: 81.5054 (81.5054)  time: 4.4306  data: 3.4684  max mem: 16337
+Epoch: [122]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 80.3497 (84.6083)  time: 4.5520  data: 3.6129  max mem: 16337
+Epoch: [122] Total time: 0:05:35 (4.4153 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2372  data: 0.2194  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3004  data: 0.2669  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2949  data: 0.2644  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3324  data: 0.2988  max mem: 16337
+ Total time: 0:00:49 (0.2917 s / it)
+tensor(6.6039, device='cuda:0', dtype=torch.float64)
+Epoch: [123]  [ 0/76]  eta: 0:05:47  lr: 0.001000  loss: 75.1207 (75.1207)  time: 4.5663  data: 3.6105  max mem: 16337
+Epoch: [123]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 98.6002 (84.7604)  time: 4.3795  data: 3.4523  max mem: 16337
+Epoch: [123] Total time: 0:05:40 (4.4764 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2553  data: 0.2199  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3334  data: 0.3000  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2843  data: 0.2517  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3498  data: 0.3169  max mem: 16337
+ Total time: 0:00:51 (0.3004 s / it)
+tensor(6.4043, device='cuda:0', dtype=torch.float64)
+Epoch: [124]  [ 0/76]  eta: 0:05:34  lr: 0.001000  loss: 70.3886 (70.3886)  time: 4.3978  data: 3.4305  max mem: 16337
+Epoch: [124]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 76.8404 (84.9375)  time: 4.6520  data: 3.7003  max mem: 16337
+Epoch: [124] Total time: 0:05:40 (4.4741 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2204  data: 0.1840  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3380  data: 0.3060  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3042  data: 0.2710  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3363  data: 0.3030  max mem: 16337
+ Total time: 0:00:50 (0.2954 s / it)
+tensor(6.7871, device='cuda:0', dtype=torch.float64)
+Epoch: [125]  [ 0/76]  eta: 0:06:23  lr: 0.001000  loss: 77.3552 (77.3552)  time: 5.0460  data: 4.0899  max mem: 16337
+Epoch: [125]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 98.6658 (83.2764)  time: 4.2738  data: 3.3580  max mem: 16337
+Epoch: [125] Total time: 0:05:26 (4.2977 s / it)
+  [  0/171]  eta: 0:00:49    time: 0.2877  data: 0.2493  max mem: 16337
+  [ 80/171]  eta: 0:00:28    time: 0.3618  data: 0.3304  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2691  data: 0.2347  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3067  data: 0.2727  max mem: 16337
+ Total time: 0:00:52 (0.3045 s / it)
+tensor(6.4363, device='cuda:0', dtype=torch.float64)
+Epoch: [126]  [ 0/76]  eta: 0:06:06  lr: 0.001000  loss: 76.9497 (76.9497)  time: 4.8207  data: 3.8598  max mem: 16337
+Epoch: [126]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 85.7698 (84.3308)  time: 4.2198  data: 3.2611  max mem: 16337
+Epoch: [126] Total time: 0:05:11 (4.0940 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2167  data: 0.1824  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.2946  data: 0.2606  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2677  data: 0.2358  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2923  data: 0.2583  max mem: 16337
+ Total time: 0:00:48 (0.2838 s / it)
+tensor(6.4353, device='cuda:0', dtype=torch.float64)
+Epoch: [127]  [ 0/76]  eta: 0:05:05  lr: 0.001000  loss: 72.3047 (72.3047)  time: 4.0262  data: 3.0672  max mem: 16337
+Epoch: [127]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 77.0453 (83.4863)  time: 4.2408  data: 3.3028  max mem: 16337
+Epoch: [127] Total time: 0:05:17 (4.1760 s / it)
+  [  0/171]  eta: 0:00:42    time: 0.2505  data: 0.2138  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3177  data: 0.2839  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2731  data: 0.2395  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2987  data: 0.2640  max mem: 16337
+ Total time: 0:00:49 (0.2909 s / it)
+tensor(6.3070, device='cuda:0', dtype=torch.float64)
+Epoch: [128]  [ 0/76]  eta: 0:05:09  lr: 0.001000  loss: 89.5583 (89.5583)  time: 4.0666  data: 3.1092  max mem: 16337
+Epoch: [128]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 75.2267 (81.8618)  time: 4.2775  data: 3.3481  max mem: 16337
+Epoch: [128] Total time: 0:05:18 (4.1854 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2210  data: 0.1852  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3199  data: 0.2861  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2837  data: 0.2517  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3007  data: 0.2663  max mem: 16337
+ Total time: 0:00:46 (0.2742 s / it)
+tensor(6.7283, device='cuda:0', dtype=torch.float64)
+Epoch: [129]  [ 0/76]  eta: 0:05:42  lr: 0.001000  loss: 75.9649 (75.9649)  time: 4.5086  data: 3.5465  max mem: 16337
+Epoch: [129]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 91.2901 (82.1146)  time: 4.4817  data: 3.5439  max mem: 16337
+Epoch: [129] Total time: 0:05:32 (4.3815 s / it)
+  [  0/171]  eta: 0:00:47    time: 0.2782  data: 0.2434  max mem: 16337
+  [ 80/171]  eta: 0:00:29    time: 0.3665  data: 0.3338  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3328  data: 0.2986  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3813  data: 0.3470  max mem: 16337
+ Total time: 0:00:56 (0.3276 s / it)
+tensor(6.4169, device='cuda:0', dtype=torch.float64)
+Epoch: [130]  [ 0/76]  eta: 0:05:47  lr: 0.001000  loss: 71.7178 (71.7178)  time: 4.5723  data: 3.6263  max mem: 16337
+Epoch: [130]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 80.8125 (79.8568)  time: 4.1529  data: 3.2479  max mem: 16337
+Epoch: [130] Total time: 0:05:27 (4.3099 s / it)
+  [  0/171]  eta: 0:00:36    time: 0.2158  data: 0.1832  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3464  data: 0.3135  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3116  data: 0.2778  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3313  data: 0.2977  max mem: 16337
+ Total time: 0:00:50 (0.2980 s / it)
+tensor(6.1726, device='cuda:0', dtype=torch.float64)
+Epoch: [131]  [ 0/76]  eta: 0:05:33  lr: 0.001000  loss: 75.0850 (75.0850)  time: 4.3821  data: 3.4178  max mem: 16337
+Epoch: [131]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 73.4796 (79.1834)  time: 4.3716  data: 3.4279  max mem: 16337
+Epoch: [131] Total time: 0:05:27 (4.3144 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2280  data: 0.1924  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3061  data: 0.2730  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2837  data: 0.2504  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2930  data: 0.2590  max mem: 16337
+ Total time: 0:00:47 (0.2765 s / it)
+tensor(6.4379, device='cuda:0', dtype=torch.float64)
+Epoch: [132]  [ 0/76]  eta: 0:04:58  lr: 0.001000  loss: 82.5510 (82.5510)  time: 3.9325  data: 2.9694  max mem: 16337
+Epoch: [132]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 76.6581 (79.6783)  time: 4.5410  data: 3.6082  max mem: 16337
+Epoch: [132] Total time: 0:05:35 (4.4136 s / it)
+  [  0/171]  eta: 0:00:37    time: 0.2196  data: 0.1839  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3372  data: 0.3051  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2998  data: 0.2655  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3566  data: 0.3220  max mem: 16337
+ Total time: 0:00:51 (0.2985 s / it)
+tensor(6.1597, device='cuda:0', dtype=torch.float64)
+Epoch: [133]  [ 0/76]  eta: 0:06:13  lr: 0.001000  loss: 70.4874 (70.4874)  time: 4.9139  data: 3.9514  max mem: 16337
+Epoch: [133]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 92.0174 (78.8785)  time: 4.5140  data: 3.5592  max mem: 16337
+Epoch: [133] Total time: 0:05:41 (4.4940 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2670  data: 0.2378  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3306  data: 0.2968  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3047  data: 0.2707  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3075  data: 0.2733  max mem: 16337
+ Total time: 0:00:50 (0.2949 s / it)
+tensor(6.5295, device='cuda:0', dtype=torch.float64)
+Epoch: [134]  [ 0/76]  eta: 0:05:27  lr: 0.001000  loss: 65.2064 (65.2064)  time: 4.3032  data: 3.3361  max mem: 16337
+Epoch: [134]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 75.6260 (79.6552)  time: 4.2966  data: 3.3628  max mem: 16337
+Epoch: [134] Total time: 0:05:39 (4.4693 s / it)
+  [  0/171]  eta: 0:00:46    time: 0.2702  data: 0.2358  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3279  data: 0.2939  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3030  data: 0.2697  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3332  data: 0.3008  max mem: 16337
+ Total time: 0:00:50 (0.2935 s / it)
+tensor(6.1948, device='cuda:0', dtype=torch.float64)
+Epoch: [135]  [ 0/76]  eta: 0:05:50  lr: 0.001000  loss: 70.8950 (70.8950)  time: 4.6085  data: 3.6555  max mem: 16337
+Epoch: [135]  [75/76]  eta: 0:00:04  lr: 0.001000  loss: 82.6128 (77.8933)  time: 4.2689  data: 3.3206  max mem: 16337
+Epoch: [135] Total time: 0:05:30 (4.3450 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2282  data: 0.1922  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3352  data: 0.3013  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2792  data: 0.2459  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3325  data: 0.2997  max mem: 16337
+ Total time: 0:00:49 (0.2877 s / it)
+tensor(6.3003, device='cuda:0', dtype=torch.float64)
+Epoch: [136]  [ 0/76]  eta: 0:05:10  lr: 0.001000  loss: 73.9687 (73.9687)  time: 4.0896  data: 3.1287  max mem: 16337
+Epoch: [136]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 75.8319 (76.8717)  time: 3.5969  data: 3.1418  max mem: 16337
+Epoch: [136] Total time: 0:04:41 (3.6981 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1978  data: 0.1820  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2934  data: 0.2771  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2533  data: 0.2369  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2777  data: 0.2611  max mem: 16337
+ Total time: 0:00:43 (0.2530 s / it)
+tensor(6.2934, device='cuda:0', dtype=torch.float64)
+Epoch: [137]  [ 0/76]  eta: 0:04:12  lr: 0.001000  loss: 70.1646 (70.1646)  time: 3.3254  data: 2.8689  max mem: 16337
+Epoch: [137]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 86.8874 (77.0271)  time: 3.5414  data: 3.0861  max mem: 16337
+Epoch: [137] Total time: 0:04:30 (3.5554 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2583  data: 0.2394  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3459  data: 0.3277  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2880  data: 0.2709  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3276  data: 0.3097  max mem: 16337
+ Total time: 0:00:46 (0.2720 s / it)
+tensor(6.4901, device='cuda:0', dtype=torch.float64)
+Epoch: [138]  [ 0/76]  eta: 0:03:56  lr: 0.001000  loss: 64.1522 (64.1522)  time: 3.1058  data: 2.6491  max mem: 16337
+Epoch: [138]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 70.6246 (75.7226)  time: 3.6917  data: 3.2364  max mem: 16337
+Epoch: [138] Total time: 0:04:44 (3.7374 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1803  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3119  data: 0.2964  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2603  data: 0.2448  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2917  data: 0.2753  max mem: 16337
+ Total time: 0:00:46 (0.2697 s / it)
+tensor(6.0461, device='cuda:0', dtype=torch.float64)
+Epoch: [139]  [ 0/76]  eta: 0:04:25  lr: 0.001000  loss: 69.1329 (69.1329)  time: 3.4972  data: 3.0402  max mem: 16337
+Epoch: [139]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 69.8375 (75.5072)  time: 3.5456  data: 3.0903  max mem: 16337
+Epoch: [139] Total time: 0:04:49 (3.8051 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2565  data: 0.2386  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2908  data: 0.2750  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3239  data: 0.3054  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3627  data: 0.3443  max mem: 16337
+ Total time: 0:00:47 (0.2794 s / it)
+tensor(6.1271, device='cuda:0', dtype=torch.float64)
+Epoch: [140]  [ 0/76]  eta: 0:05:38  lr: 0.001000  loss: 66.4744 (66.4744)  time: 4.4514  data: 3.9942  max mem: 16337
+Epoch: [140]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 82.5366 (73.6463)  time: 3.6394  data: 3.1840  max mem: 16337
+Epoch: [140] Total time: 0:04:44 (3.7417 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2640  data: 0.2472  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3076  data: 0.2917  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.3292  data: 0.3106  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3840  data: 0.3649  max mem: 16337
+ Total time: 0:00:47 (0.2799 s / it)
+tensor(6.2464, device='cuda:0', dtype=torch.float64)
+Epoch: [141]  [ 0/76]  eta: 0:04:45  lr: 0.001000  loss: 68.6519 (68.6519)  time: 3.7509  data: 3.2935  max mem: 16337
+Epoch: [141]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 80.1664 (75.6139)  time: 3.8305  data: 3.3750  max mem: 16337
+Epoch: [141] Total time: 0:04:48 (3.7953 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1980  data: 0.1819  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2743  data: 0.2590  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3172  data: 0.2997  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3397  data: 0.3224  max mem: 16337
+ Total time: 0:00:46 (0.2742 s / it)
+tensor(6.2107, device='cuda:0', dtype=torch.float64)
+Epoch: [142]  [ 0/76]  eta: 0:05:02  lr: 0.001000  loss: 87.8578 (87.8578)  time: 3.9758  data: 3.5196  max mem: 16337
+Epoch: [142]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 91.0162 (75.9917)  time: 3.9964  data: 3.5406  max mem: 16337
+Epoch: [142] Total time: 0:04:47 (3.7880 s / it)
+  [  0/171]  eta: 0:00:46    time: 0.2692  data: 0.2513  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2968  data: 0.2804  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2597  data: 0.2441  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3093  data: 0.2926  max mem: 16337
+ Total time: 0:00:47 (0.2772 s / it)
+tensor(6.1118, device='cuda:0', dtype=torch.float64)
+Epoch: [143]  [ 0/76]  eta: 0:04:43  lr: 0.001000  loss: 68.3202 (68.3202)  time: 3.7263  data: 3.2694  max mem: 16337
+Epoch: [143]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 70.8357 (74.5230)  time: 3.8990  data: 3.4436  max mem: 16337
+Epoch: [143] Total time: 0:04:53 (3.8667 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2259  data: 0.2094  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3100  data: 0.2934  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2524  data: 0.2366  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2804  data: 0.2643  max mem: 16337
+ Total time: 0:00:45 (0.2665 s / it)
+tensor(5.8663, device='cuda:0', dtype=torch.float64)
+Epoch: [144]  [ 0/76]  eta: 0:04:24  lr: 0.001000  loss: 69.0835 (69.0835)  time: 3.4773  data: 3.0203  max mem: 16337
+Epoch: [144]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 87.2545 (74.5970)  time: 3.7108  data: 3.2554  max mem: 16337
+Epoch: [144] Total time: 0:04:43 (3.7337 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2581  data: 0.2404  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2763  data: 0.2606  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2814  data: 0.2651  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2795  data: 0.2641  max mem: 16337
+ Total time: 0:00:45 (0.2681 s / it)
+tensor(5.7397, device='cuda:0', dtype=torch.float64)
+Epoch: [145]  [ 0/76]  eta: 0:05:08  lr: 0.001000  loss: 61.3356 (61.3356)  time: 4.0619  data: 3.6052  max mem: 16337
+Epoch: [145]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 65.1199 (73.7813)  time: 3.8473  data: 3.3917  max mem: 16337
+Epoch: [145] Total time: 0:04:49 (3.8111 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1986  data: 0.1827  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3322  data: 0.3145  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2495  data: 0.2337  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2736  data: 0.2578  max mem: 16337
+ Total time: 0:00:45 (0.2639 s / it)
+tensor(5.7127, device='cuda:0', dtype=torch.float64)
+Epoch: [146]  [ 0/76]  eta: 0:04:14  lr: 0.001000  loss: 72.3748 (72.3748)  time: 3.3473  data: 2.8898  max mem: 16337
+Epoch: [146]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 63.3827 (71.9912)  time: 3.6809  data: 3.2253  max mem: 16337
+Epoch: [146] Total time: 0:04:51 (3.8349 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2005  data: 0.1845  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3264  data: 0.3098  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2923  data: 0.2757  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3392  data: 0.3220  max mem: 16337
+ Total time: 0:00:47 (0.2749 s / it)
+tensor(5.6172, device='cuda:0', dtype=torch.float64)
+Epoch: [147]  [ 0/76]  eta: 0:04:37  lr: 0.001000  loss: 68.6599 (68.6599)  time: 3.6534  data: 3.1974  max mem: 16337
+Epoch: [147]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 66.8647 (72.9482)  time: 3.6484  data: 3.1927  max mem: 16337
+Epoch: [147] Total time: 0:04:45 (3.7549 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2566  data: 0.2390  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2807  data: 0.2652  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3113  data: 0.2937  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3203  data: 0.3037  max mem: 16337
+ Total time: 0:00:45 (0.2672 s / it)
+tensor(5.6452, device='cuda:0', dtype=torch.float64)
+Epoch: [148]  [ 0/76]  eta: 0:04:24  lr: 0.001000  loss: 63.2900 (63.2900)  time: 3.4795  data: 3.0228  max mem: 16337
+Epoch: [148]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 63.6252 (73.1350)  time: 3.8937  data: 3.4378  max mem: 16337
+Epoch: [148] Total time: 0:04:50 (3.8284 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2450  data: 0.2282  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3083  data: 0.2919  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2987  data: 0.2812  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3212  data: 0.3042  max mem: 16337
+ Total time: 0:00:47 (0.2754 s / it)
+tensor(5.7406, device='cuda:0', dtype=torch.float64)
+Epoch: [149]  [ 0/76]  eta: 0:04:43  lr: 0.001000  loss: 60.1578 (60.1578)  time: 3.7351  data: 3.2781  max mem: 16337
+Epoch: [149]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 70.5715 (72.4297)  time: 3.8355  data: 3.3801  max mem: 16337
+Epoch: [149] Total time: 0:04:51 (3.8301 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2000  data: 0.1848  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3166  data: 0.3003  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2788  data: 0.2624  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2762  data: 0.2608  max mem: 16337
+ Total time: 0:00:45 (0.2658 s / it)
+tensor(5.7221, device='cuda:0', dtype=torch.float64)
+Epoch: [150]  [ 0/76]  eta: 0:04:26  lr: 0.001000  loss: 77.5049 (77.5049)  time: 3.5079  data: 3.0507  max mem: 16337
+Epoch: [150]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 71.6442 (71.2878)  time: 3.7620  data: 3.3065  max mem: 16337
+Epoch: [150] Total time: 0:04:47 (3.7813 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2676  data: 0.2499  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3259  data: 0.3090  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2697  data: 0.2537  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2897  data: 0.2736  max mem: 16337
+ Total time: 0:00:44 (0.2604 s / it)
+tensor(5.3077, device='cuda:0', dtype=torch.float64)
+Epoch: [151]  [ 0/76]  eta: 0:04:54  lr: 0.001000  loss: 64.2584 (64.2584)  time: 3.8694  data: 3.4110  max mem: 16337
+Epoch: [151]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 65.4513 (71.5616)  time: 3.4600  data: 3.0051  max mem: 16337
+Epoch: [151] Total time: 0:04:31 (3.5733 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1960  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2860  data: 0.2700  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2945  data: 0.2772  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2895  data: 0.2737  max mem: 16337
+ Total time: 0:00:45 (0.2650 s / it)
+tensor(4.8576, device='cuda:0', dtype=torch.float64)
+Epoch: [152]  [ 0/76]  eta: 0:04:15  lr: 0.001000  loss: 85.9656 (85.9656)  time: 3.3642  data: 2.9067  max mem: 16337
+Epoch: [152]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 99.5904 (70.3577)  time: 3.8001  data: 3.3446  max mem: 16337
+Epoch: [152] Total time: 0:04:37 (3.6487 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2540  data: 0.2351  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2718  data: 0.2559  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2949  data: 0.2768  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3260  data: 0.3085  max mem: 16337
+ Total time: 0:00:44 (0.2607 s / it)
+tensor(4.8513, device='cuda:0', dtype=torch.float64)
+Epoch: [153]  [ 0/76]  eta: 0:05:32  lr: 0.001000  loss: 61.4524 (61.4524)  time: 4.3802  data: 3.9225  max mem: 16337
+Epoch: [153]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 65.6513 (69.0653)  time: 3.6971  data: 3.2419  max mem: 16337
+Epoch: [153] Total time: 0:04:30 (3.5599 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1951  data: 0.1792  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2893  data: 0.2729  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2679  data: 0.2511  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2728  data: 0.2569  max mem: 16337
+ Total time: 0:00:43 (0.2563 s / it)
+tensor(4.5825, device='cuda:0', dtype=torch.float64)
+Epoch: [154]  [ 0/76]  eta: 0:04:08  lr: 0.001000  loss: 61.8454 (61.8454)  time: 3.2645  data: 2.8074  max mem: 16337
+Epoch: [154]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 57.9219 (68.6984)  time: 3.4547  data: 2.9994  max mem: 16337
+Epoch: [154] Total time: 0:04:27 (3.5256 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1963  data: 0.1805  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2720  data: 0.2563  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2601  data: 0.2438  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3131  data: 0.2958  max mem: 16337
+ Total time: 0:00:43 (0.2549 s / it)
+tensor(4.4037, device='cuda:0', dtype=torch.float64)
+Epoch: [155]  [ 0/76]  eta: 0:04:53  lr: 0.001000  loss: 76.1749 (76.1749)  time: 3.8589  data: 3.4012  max mem: 16337
+Epoch: [155]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 63.2893 (68.6681)  time: 3.6232  data: 3.1679  max mem: 16337
+Epoch: [155] Total time: 0:04:33 (3.5958 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1995  data: 0.1837  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3008  data: 0.2845  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2655  data: 0.2489  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2854  data: 0.2696  max mem: 16337
+ Total time: 0:00:44 (0.2615 s / it)
+tensor(4.3678, device='cuda:0', dtype=torch.float64)
+Epoch: [156]  [ 0/76]  eta: 0:04:07  lr: 0.001000  loss: 56.7738 (56.7738)  time: 3.2592  data: 2.8025  max mem: 16337
+Epoch: [156]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 67.9093 (69.3891)  time: 3.5086  data: 3.0534  max mem: 16337
+Epoch: [156] Total time: 0:04:31 (3.5743 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2264  data: 0.2094  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2894  data: 0.2729  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2463  data: 0.2305  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2696  data: 0.2538  max mem: 16337
+ Total time: 0:00:43 (0.2568 s / it)
+tensor(4.4499, device='cuda:0', dtype=torch.float64)
+Epoch: [157]  [ 0/76]  eta: 0:04:05  lr: 0.001000  loss: 65.6161 (65.6161)  time: 3.2363  data: 2.7796  max mem: 16337
+Epoch: [157]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 62.2665 (67.4004)  time: 3.6627  data: 3.2076  max mem: 16337
+Epoch: [157] Total time: 0:04:31 (3.5773 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1995  data: 0.1836  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2728  data: 0.2571  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2570  data: 0.2412  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2821  data: 0.2663  max mem: 16337
+ Total time: 0:00:43 (0.2520 s / it)
+tensor(4.4494, device='cuda:0', dtype=torch.float64)
+Epoch: [158]  [ 0/76]  eta: 0:04:20  lr: 0.001000  loss: 56.7930 (56.7930)  time: 3.4271  data: 2.9705  max mem: 16337
+Epoch: [158]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 59.3227 (66.9057)  time: 3.5205  data: 3.0655  max mem: 16337
+Epoch: [158] Total time: 0:04:27 (3.5203 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1984  data: 0.1814  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2748  data: 0.2591  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2597  data: 0.2435  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2985  data: 0.2816  max mem: 16337
+ Total time: 0:00:43 (0.2569 s / it)
+tensor(4.3021, device='cuda:0', dtype=torch.float64)
+Epoch: [159]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 61.5023 (61.5023)  time: 3.3933  data: 2.9361  max mem: 16337
+Epoch: [159]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 63.6122 (66.1725)  time: 3.6099  data: 3.1546  max mem: 16337
+Epoch: [159] Total time: 0:04:31 (3.5734 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1960  data: 0.1801  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2717  data: 0.2559  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3175  data: 0.2995  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3252  data: 0.3082  max mem: 16337
+ Total time: 0:00:44 (0.2614 s / it)
+tensor(4.3469, device='cuda:0', dtype=torch.float64)
+Epoch: [160]  [ 0/76]  eta: 0:04:17  lr: 0.001000  loss: 63.1688 (63.1688)  time: 3.3897  data: 2.9330  max mem: 16337
+Epoch: [160]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 56.1381 (65.5445)  time: 3.4763  data: 3.0211  max mem: 16337
+Epoch: [160] Total time: 0:04:26 (3.5103 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2564  data: 0.2388  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3124  data: 0.2952  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2779  data: 0.2607  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2946  data: 0.2778  max mem: 16337
+ Total time: 0:00:47 (0.2755 s / it)
+tensor(4.4234, device='cuda:0', dtype=torch.float64)
+Epoch: [161]  [ 0/76]  eta: 0:04:11  lr: 0.001000  loss: 75.4289 (75.4289)  time: 3.3090  data: 2.8520  max mem: 16337
+Epoch: [161]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 60.6846 (64.1270)  time: 3.6275  data: 3.1724  max mem: 16337
+Epoch: [161] Total time: 0:04:30 (3.5564 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1989  data: 0.1830  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2715  data: 0.2558  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2848  data: 0.2677  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3133  data: 0.2963  max mem: 16337
+ Total time: 0:00:42 (0.2480 s / it)
+tensor(4.3649, device='cuda:0', dtype=torch.float64)
+Epoch: [162]  [ 0/76]  eta: 0:04:55  lr: 0.001000  loss: 70.0465 (70.0465)  time: 3.8836  data: 3.4253  max mem: 16337
+Epoch: [162]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 61.3194 (65.1004)  time: 3.5105  data: 3.0553  max mem: 16337
+Epoch: [162] Total time: 0:04:32 (3.5873 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1815  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2728  data: 0.2571  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3030  data: 0.2855  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3021  data: 0.2854  max mem: 16337
+ Total time: 0:00:45 (0.2675 s / it)
+tensor(4.3649, device='cuda:0', dtype=torch.float64)
+Epoch: [163]  [ 0/76]  eta: 0:04:16  lr: 0.001000  loss: 57.3043 (57.3043)  time: 3.3755  data: 2.9189  max mem: 16337
+Epoch: [163]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 62.1776 (61.8871)  time: 3.5941  data: 3.1389  max mem: 16337
+Epoch: [163] Total time: 0:04:25 (3.4924 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1806  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2921  data: 0.2758  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2483  data: 0.2324  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3094  data: 0.2917  max mem: 16337
+ Total time: 0:00:44 (0.2577 s / it)
+tensor(4.3164, device='cuda:0', dtype=torch.float64)
+Epoch: [164]  [ 0/76]  eta: 0:04:59  lr: 0.001000  loss: 62.7928 (62.7928)  time: 3.9463  data: 3.4890  max mem: 16337
+Epoch: [164]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 56.5321 (60.6423)  time: 3.7227  data: 3.2673  max mem: 16337
+Epoch: [164] Total time: 0:04:34 (3.6104 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1977  data: 0.1817  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2725  data: 0.2568  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2613  data: 0.2455  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2746  data: 0.2588  max mem: 16337
+ Total time: 0:00:43 (0.2551 s / it)
+tensor(4.2949, device='cuda:0', dtype=torch.float64)
+Epoch: [165]  [ 0/76]  eta: 0:03:56  lr: 0.001000  loss: 57.7279 (57.7279)  time: 3.1097  data: 2.6528  max mem: 16337
+Epoch: [165]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 53.8429 (60.0669)  time: 3.6525  data: 3.1975  max mem: 16337
+Epoch: [165] Total time: 0:04:36 (3.6420 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2030  data: 0.1877  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2731  data: 0.2574  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2491  data: 0.2332  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3109  data: 0.2932  max mem: 16337
+ Total time: 0:00:43 (0.2525 s / it)
+tensor(4.4936, device='cuda:0', dtype=torch.float64)
+Epoch: [166]  [ 0/76]  eta: 0:04:28  lr: 0.001000  loss: 57.3866 (57.3866)  time: 3.5382  data: 3.0813  max mem: 16337
+Epoch: [166]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 68.0374 (61.4120)  time: 3.4959  data: 3.0409  max mem: 16337
+Epoch: [166] Total time: 0:04:29 (3.5523 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1967  data: 0.1808  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2745  data: 0.2586  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2691  data: 0.2526  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2726  data: 0.2568  max mem: 16337
+ Total time: 0:00:42 (0.2489 s / it)
+tensor(4.4338, device='cuda:0', dtype=torch.float64)
+Epoch: [167]  [ 0/76]  eta: 0:04:32  lr: 0.001000  loss: 75.0142 (75.0142)  time: 3.5857  data: 3.1287  max mem: 16337
+Epoch: [167]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 55.5452 (62.3489)  time: 3.4178  data: 2.9628  max mem: 16337
+Epoch: [167] Total time: 0:04:29 (3.5480 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1806  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2709  data: 0.2555  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2585  data: 0.2425  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3236  data: 0.3061  max mem: 16337
+ Total time: 0:00:45 (0.2637 s / it)
+tensor(4.3316, device='cuda:0', dtype=torch.float64)
+Epoch: [168]  [ 0/76]  eta: 0:04:59  lr: 0.001000  loss: 83.6778 (83.6778)  time: 3.9354  data: 3.4782  max mem: 16337
+Epoch: [168]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 68.4350 (60.9614)  time: 3.4225  data: 2.9674  max mem: 16337
+Epoch: [168] Total time: 0:04:32 (3.5893 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1972  data: 0.1803  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3118  data: 0.2962  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2483  data: 0.2323  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3034  data: 0.2860  max mem: 16337
+ Total time: 0:00:43 (0.2553 s / it)
+tensor(4.3230, device='cuda:0', dtype=torch.float64)
+Epoch: [169]  [ 0/76]  eta: 0:04:29  lr: 0.001000  loss: 58.1043 (58.1043)  time: 3.5451  data: 3.0892  max mem: 16337
+Epoch: [169]  [75/76]  eta: 0:00:03  lr: 0.001000  loss: 99.6852 (61.5759)  time: 3.5801  data: 3.1252  max mem: 16337
+Epoch: [169] Total time: 0:04:25 (3.4904 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1959  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2790  data: 0.2631  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2540  data: 0.2381  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2824  data: 0.2667  max mem: 16337
+ Total time: 0:00:43 (0.2537 s / it)
+tensor(4.4749, device='cuda:0', dtype=torch.float64)
+Epoch: [170]  [ 0/76]  eta: 0:04:30  lr: 0.000100  loss: 56.2648 (56.2648)  time: 3.5573  data: 3.1006  max mem: 16337
+Epoch: [170]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 41.3474 (53.7290)  time: 3.6052  data: 3.1500  max mem: 16337
+Epoch: [170] Total time: 0:04:29 (3.5437 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2062  data: 0.1892  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2735  data: 0.2578  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2668  data: 0.2506  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2954  data: 0.2790  max mem: 16337
+ Total time: 0:00:46 (0.2699 s / it)
+tensor(4.2310, device='cuda:0', dtype=torch.float64)
+Epoch: [171]  [ 0/76]  eta: 0:04:13  lr: 0.000100  loss: 61.1376 (61.1376)  time: 3.3343  data: 2.8773  max mem: 16337
+Epoch: [171]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 40.5774 (49.7501)  time: 3.4705  data: 3.0158  max mem: 16337
+Epoch: [171] Total time: 0:04:31 (3.5761 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2029  data: 0.1870  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3480  data: 0.3298  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2840  data: 0.2673  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3078  data: 0.2912  max mem: 16337
+ Total time: 0:00:45 (0.2654 s / it)
+tensor(4.1860, device='cuda:0', dtype=torch.float64)
+Epoch: [172]  [ 0/76]  eta: 0:04:05  lr: 0.000100  loss: 55.1720 (55.1720)  time: 3.2308  data: 2.7740  max mem: 16337
+Epoch: [172]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 64.9574 (49.0957)  time: 3.6120  data: 3.1568  max mem: 16337
+Epoch: [172] Total time: 0:04:30 (3.5620 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2101  data: 0.1942  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2734  data: 0.2582  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2519  data: 0.2356  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3070  data: 0.2893  max mem: 16337
+ Total time: 0:00:43 (0.2523 s / it)
+tensor(4.2103, device='cuda:0', dtype=torch.float64)
+Epoch: [173]  [ 0/76]  eta: 0:05:09  lr: 0.000100  loss: 46.2928 (46.2928)  time: 4.0755  data: 3.6189  max mem: 16337
+Epoch: [173]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 48.5463 (49.7439)  time: 3.4598  data: 3.0049  max mem: 16337
+Epoch: [173] Total time: 0:04:31 (3.5714 s / it)
+  [  0/171]  eta: 0:00:45    time: 0.2654  data: 0.2473  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3283  data: 0.3106  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2702  data: 0.2535  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2777  data: 0.2618  max mem: 16337
+ Total time: 0:00:45 (0.2647 s / it)
+tensor(4.1671, device='cuda:0', dtype=torch.float64)
+Epoch: [174]  [ 0/76]  eta: 0:04:15  lr: 0.000100  loss: 68.2183 (68.2183)  time: 3.3629  data: 2.9068  max mem: 16337
+Epoch: [174]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 49.4948 (50.0747)  time: 3.6019  data: 3.1466  max mem: 16337
+Epoch: [174] Total time: 0:04:32 (3.5884 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1955  data: 0.1795  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2738  data: 0.2581  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2655  data: 0.2498  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2786  data: 0.2628  max mem: 16337
+ Total time: 0:00:43 (0.2563 s / it)
+tensor(4.1910, device='cuda:0', dtype=torch.float64)
+Epoch: [175]  [ 0/76]  eta: 0:04:57  lr: 0.000100  loss: 37.7519 (37.7519)  time: 3.9154  data: 3.4592  max mem: 16337
+Epoch: [175]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 38.1216 (47.5802)  time: 3.5105  data: 3.0556  max mem: 16337
+Epoch: [175] Total time: 0:04:27 (3.5152 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2267  data: 0.2097  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2721  data: 0.2564  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2493  data: 0.2337  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2749  data: 0.2592  max mem: 16337
+ Total time: 0:00:43 (0.2520 s / it)
+tensor(4.2512, device='cuda:0', dtype=torch.float64)
+Epoch: [176]  [ 0/76]  eta: 0:04:22  lr: 0.000100  loss: 42.1216 (42.1216)  time: 3.4475  data: 2.9916  max mem: 16337
+Epoch: [176]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 56.6585 (50.1818)  time: 3.5540  data: 3.0986  max mem: 16337
+Epoch: [176] Total time: 0:04:27 (3.5223 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2037  data: 0.1874  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3236  data: 0.3070  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2632  data: 0.2478  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2992  data: 0.2828  max mem: 16337
+ Total time: 0:00:44 (0.2631 s / it)
+tensor(4.2540, device='cuda:0', dtype=torch.float64)
+Epoch: [177]  [ 0/76]  eta: 0:05:23  lr: 0.000100  loss: 37.0474 (37.0474)  time: 4.2553  data: 3.7971  max mem: 16337
+Epoch: [177]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 48.1509 (47.4165)  time: 3.5138  data: 3.0588  max mem: 16337
+Epoch: [177] Total time: 0:04:33 (3.5948 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2550  data: 0.2373  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2763  data: 0.2602  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2567  data: 0.2409  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2739  data: 0.2581  max mem: 16337
+ Total time: 0:00:44 (0.2596 s / it)
+tensor(4.2748, device='cuda:0', dtype=torch.float64)
+Epoch: [178]  [ 0/76]  eta: 0:04:17  lr: 0.000100  loss: 50.5624 (50.5624)  time: 3.3926  data: 2.9358  max mem: 16337
+Epoch: [178]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 80.3342 (47.5131)  time: 3.5854  data: 3.1302  max mem: 16337
+Epoch: [178] Total time: 0:04:31 (3.5717 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1965  data: 0.1806  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3096  data: 0.2928  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2467  data: 0.2310  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2709  data: 0.2552  max mem: 16337
+ Total time: 0:00:43 (0.2560 s / it)
+tensor(4.2165, device='cuda:0', dtype=torch.float64)
+Epoch: [179]  [ 0/76]  eta: 0:04:07  lr: 0.000100  loss: 52.7400 (52.7400)  time: 3.2618  data: 2.8053  max mem: 16337
+Epoch: [179]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 40.6800 (47.3247)  time: 3.6771  data: 3.2220  max mem: 16337
+Epoch: [179] Total time: 0:04:32 (3.5904 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2282  data: 0.2111  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2986  data: 0.2821  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2583  data: 0.2425  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2785  data: 0.2626  max mem: 16337
+ Total time: 0:00:43 (0.2550 s / it)
+tensor(4.2798, device='cuda:0', dtype=torch.float64)
+Epoch: [180]  [ 0/76]  eta: 0:04:17  lr: 0.000100  loss: 39.8466 (39.8466)  time: 3.3923  data: 2.9354  max mem: 16337
+Epoch: [180]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 73.9520 (47.7813)  time: 3.5996  data: 3.1444  max mem: 16337
+Epoch: [180] Total time: 0:04:26 (3.5079 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1970  data: 0.1811  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2736  data: 0.2578  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2873  data: 0.2700  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2882  data: 0.2720  max mem: 16337
+ Total time: 0:00:43 (0.2552 s / it)
+tensor(4.2806, device='cuda:0', dtype=torch.float64)
+Epoch: [181]  [ 0/76]  eta: 0:04:37  lr: 0.000100  loss: 51.7694 (51.7694)  time: 3.6472  data: 3.1906  max mem: 16337
+Epoch: [181]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 42.7063 (49.5574)  time: 3.5402  data: 3.0851  max mem: 16337
+Epoch: [181] Total time: 0:04:24 (3.4790 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2587  data: 0.2388  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2734  data: 0.2577  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2512  data: 0.2354  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2758  data: 0.2600  max mem: 16337
+ Total time: 0:00:42 (0.2462 s / it)
+tensor(4.2073, device='cuda:0', dtype=torch.float64)
+Epoch: [182]  [ 0/76]  eta: 0:04:16  lr: 0.000100  loss: 39.9499 (39.9499)  time: 3.3740  data: 2.9177  max mem: 16337
+Epoch: [182]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 43.0564 (45.7877)  time: 3.5357  data: 3.0804  max mem: 16337
+Epoch: [182] Total time: 0:04:27 (3.5179 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2454  data: 0.2277  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2731  data: 0.2573  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2481  data: 0.2323  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2710  data: 0.2553  max mem: 16337
+ Total time: 0:00:43 (0.2560 s / it)
+tensor(4.1855, device='cuda:0', dtype=torch.float64)
+Epoch: [183]  [ 0/76]  eta: 0:04:24  lr: 0.000100  loss: 43.2084 (43.2084)  time: 3.4754  data: 3.0186  max mem: 16337
+Epoch: [183]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 41.8356 (47.2468)  time: 3.5622  data: 3.1071  max mem: 16337
+Epoch: [183] Total time: 0:04:25 (3.4993 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2572  data: 0.2397  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2717  data: 0.2561  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2483  data: 0.2325  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2713  data: 0.2556  max mem: 16337
+ Total time: 0:00:44 (0.2597 s / it)
+tensor(4.2573, device='cuda:0', dtype=torch.float64)
+Epoch: [184]  [ 0/76]  eta: 0:04:29  lr: 0.000100  loss: 51.3204 (51.3204)  time: 3.5442  data: 3.0876  max mem: 16337
+Epoch: [184]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 39.1903 (46.4390)  time: 3.6984  data: 3.2430  max mem: 16337
+Epoch: [184] Total time: 0:04:30 (3.5615 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1952  data: 0.1794  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2790  data: 0.2628  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2509  data: 0.2352  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2755  data: 0.2597  max mem: 16337
+ Total time: 0:00:43 (0.2550 s / it)
+tensor(4.2598, device='cuda:0', dtype=torch.float64)
+Epoch: [185]  [ 0/76]  eta: 0:04:27  lr: 0.000100  loss: 41.7069 (41.7069)  time: 3.5188  data: 3.0626  max mem: 16337
+Epoch: [185]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 68.7532 (47.2419)  time: 3.4765  data: 3.0215  max mem: 16337
+Epoch: [185] Total time: 0:04:26 (3.5088 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1989  data: 0.1829  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2882  data: 0.2725  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2485  data: 0.2327  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2727  data: 0.2569  max mem: 16337
+ Total time: 0:00:45 (0.2663 s / it)
+tensor(4.3057, device='cuda:0', dtype=torch.float64)
+Epoch: [186]  [ 0/76]  eta: 0:04:14  lr: 0.000100  loss: 72.1573 (72.1573)  time: 3.3507  data: 2.8942  max mem: 16337
+Epoch: [186]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 37.9426 (46.7716)  time: 3.4772  data: 3.0223  max mem: 16337
+Epoch: [186] Total time: 0:04:25 (3.4979 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3262  data: 0.3092  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2476  data: 0.2318  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2711  data: 0.2553  max mem: 16337
+ Total time: 0:00:43 (0.2531 s / it)
+tensor(4.2508, device='cuda:0', dtype=torch.float64)
+Epoch: [187]  [ 0/76]  eta: 0:04:25  lr: 0.000100  loss: 45.2443 (45.2443)  time: 3.4912  data: 3.0349  max mem: 16337
+Epoch: [187]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 39.5781 (48.2932)  time: 3.5757  data: 3.1206  max mem: 16337
+Epoch: [187] Total time: 0:04:29 (3.5456 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1803  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3125  data: 0.2956  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2443  data: 0.2292  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2755  data: 0.2605  max mem: 16337
+ Total time: 0:00:43 (0.2558 s / it)
+tensor(4.2850, device='cuda:0', dtype=torch.float64)
+Epoch: [188]  [ 0/76]  eta: 0:04:00  lr: 0.000100  loss: 51.1391 (51.1391)  time: 3.1707  data: 2.7141  max mem: 16337
+Epoch: [188]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 55.9537 (45.2604)  time: 3.6859  data: 3.2305  max mem: 16337
+Epoch: [188] Total time: 0:04:27 (3.5213 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1815  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.2714  data: 0.2556  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2654  data: 0.2497  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2954  data: 0.2792  max mem: 16337
+ Total time: 0:00:46 (0.2692 s / it)
+tensor(4.3132, device='cuda:0', dtype=torch.float64)
+Epoch: [189]  [ 0/76]  eta: 0:04:58  lr: 0.000100  loss: 44.0686 (44.0686)  time: 3.9290  data: 3.4718  max mem: 16337
+Epoch: [189]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 50.9678 (46.5356)  time: 3.4863  data: 3.0313  max mem: 16337
+Epoch: [189] Total time: 0:04:27 (3.5194 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2283  data: 0.2111  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2765  data: 0.2606  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2607  data: 0.2452  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2876  data: 0.2718  max mem: 16337
+ Total time: 0:00:43 (0.2547 s / it)
+tensor(4.3579, device='cuda:0', dtype=torch.float64)
+Epoch: [190]  [ 0/76]  eta: 0:04:20  lr: 0.000100  loss: 38.4706 (38.4706)  time: 3.4317  data: 2.9750  max mem: 16337
+Epoch: [190]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 61.7572 (45.1471)  time: 3.6422  data: 3.1869  max mem: 16337
+Epoch: [190] Total time: 0:04:31 (3.5675 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1978  data: 0.1819  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2754  data: 0.2596  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2529  data: 0.2367  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2783  data: 0.2619  max mem: 16337
+ Total time: 0:00:42 (0.2501 s / it)
+tensor(4.2713, device='cuda:0', dtype=torch.float64)
+Epoch: [191]  [ 0/76]  eta: 0:04:43  lr: 0.000100  loss: 45.4467 (45.4467)  time: 3.7339  data: 3.2774  max mem: 16337
+Epoch: [191]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 38.0989 (45.4774)  time: 3.5057  data: 3.0507  max mem: 16337
+Epoch: [191] Total time: 0:04:33 (3.5989 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1952  data: 0.1794  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2737  data: 0.2580  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2508  data: 0.2351  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2969  data: 0.2800  max mem: 16337
+ Total time: 0:00:42 (0.2501 s / it)
+tensor(4.3172, device='cuda:0', dtype=torch.float64)
+Epoch: [192]  [ 0/76]  eta: 0:04:43  lr: 0.000100  loss: 38.5583 (38.5583)  time: 3.7306  data: 3.2749  max mem: 16337
+Epoch: [192]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 38.6866 (45.3918)  time: 3.4385  data: 2.9832  max mem: 16337
+Epoch: [192] Total time: 0:04:23 (3.4626 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1964  data: 0.1805  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3320  data: 0.3145  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2664  data: 0.2501  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3335  data: 0.3160  max mem: 16337
+ Total time: 0:00:45 (0.2642 s / it)
+tensor(4.2215, device='cuda:0', dtype=torch.float64)
+Epoch: [193]  [ 0/76]  eta: 0:04:23  lr: 0.000100  loss: 56.4721 (56.4721)  time: 3.4704  data: 3.0131  max mem: 16337
+Epoch: [193]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 49.4436 (45.6002)  time: 3.6064  data: 3.1514  max mem: 16337
+Epoch: [193] Total time: 0:04:32 (3.5913 s / it)
+  [  0/171]  eta: 0:00:39    time: 0.2287  data: 0.2113  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2963  data: 0.2800  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2941  data: 0.2771  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3219  data: 0.3052  max mem: 16337
+ Total time: 0:00:45 (0.2642 s / it)
+tensor(4.3200, device='cuda:0', dtype=torch.float64)
+Epoch: [194]  [ 0/76]  eta: 0:05:00  lr: 0.000100  loss: 41.3612 (41.3612)  time: 3.9593  data: 3.5030  max mem: 16337
+Epoch: [194]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 49.7745 (46.0445)  time: 3.5090  data: 3.0539  max mem: 16337
+Epoch: [194] Total time: 0:04:31 (3.5679 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1967  data: 0.1809  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2733  data: 0.2575  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2543  data: 0.2383  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2871  data: 0.2709  max mem: 16337
+ Total time: 0:00:42 (0.2498 s / it)
+tensor(4.2834, device='cuda:0', dtype=torch.float64)
+Epoch: [195]  [ 0/76]  eta: 0:04:16  lr: 0.000100  loss: 53.8579 (53.8579)  time: 3.3812  data: 2.9247  max mem: 16337
+Epoch: [195]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 62.7379 (46.3710)  time: 3.8126  data: 3.3574  max mem: 16337
+Epoch: [195] Total time: 0:04:38 (3.6652 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1982  data: 0.1822  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.3039  data: 0.2879  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2472  data: 0.2315  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2723  data: 0.2566  max mem: 16337
+ Total time: 0:00:42 (0.2466 s / it)
+tensor(4.2983, device='cuda:0', dtype=torch.float64)
+Epoch: [196]  [ 0/76]  eta: 0:04:29  lr: 0.000100  loss: 43.2144 (43.2144)  time: 3.5524  data: 3.0961  max mem: 16337
+Epoch: [196]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 61.3306 (46.6127)  time: 3.3793  data: 2.9242  max mem: 16337
+Epoch: [196] Total time: 0:04:22 (3.4570 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1992  data: 0.1834  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2775  data: 0.2617  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2491  data: 0.2333  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2735  data: 0.2577  max mem: 16337
+ Total time: 0:00:42 (0.2492 s / it)
+tensor(4.2870, device='cuda:0', dtype=torch.float64)
+Epoch: [197]  [ 0/76]  eta: 0:04:26  lr: 0.000100  loss: 44.0826 (44.0826)  time: 3.5101  data: 3.0537  max mem: 16337
+Epoch: [197]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 55.2892 (46.3695)  time: 3.5598  data: 3.1047  max mem: 16337
+Epoch: [197] Total time: 0:04:33 (3.5934 s / it)
+  [  0/171]  eta: 0:00:43    time: 0.2546  data: 0.2369  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2777  data: 0.2619  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2843  data: 0.2674  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3029  data: 0.2862  max mem: 16337
+ Total time: 0:00:43 (0.2520 s / it)
+tensor(4.2860, device='cuda:0', dtype=torch.float64)
+Epoch: [198]  [ 0/76]  eta: 0:04:27  lr: 0.000100  loss: 41.2233 (41.2233)  time: 3.5237  data: 3.0671  max mem: 16337
+Epoch: [198]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 44.1959 (45.5982)  time: 3.4360  data: 2.9810  max mem: 16337
+Epoch: [198] Total time: 0:04:26 (3.5131 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1814  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2693  data: 0.2540  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2423  data: 0.2272  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2660  data: 0.2510  max mem: 16337
+ Total time: 0:00:41 (0.2442 s / it)
+tensor(4.2680, device='cuda:0', dtype=torch.float64)
+Epoch: [199]  [ 0/76]  eta: 0:04:02  lr: 0.000100  loss: 40.4863 (40.4863)  time: 3.1939  data: 2.7381  max mem: 16337
+Epoch: [199]  [75/76]  eta: 0:00:03  lr: 0.000100  loss: 34.7863 (45.6908)  time: 3.4128  data: 2.9564  max mem: 16337
+Epoch: [199] Total time: 0:04:18 (3.4040 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1955  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2804  data: 0.2647  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2766  data: 0.2608  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2743  data: 0.2586  max mem: 16337
+ Total time: 0:00:42 (0.2488 s / it)
+tensor(4.3335, device='cuda:0', dtype=torch.float64)
+Epoch: [200]  [ 0/76]  eta: 0:04:13  lr: 0.000010  loss: 80.0277 (80.0277)  time: 3.3307  data: 2.8731  max mem: 16337
+Epoch: [200]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 39.7360 (46.9186)  time: 3.3588  data: 2.9024  max mem: 16337
+Epoch: [200] Total time: 0:04:15 (3.3645 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1801  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2803  data: 0.2648  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2509  data: 0.2350  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2747  data: 0.2589  max mem: 16337
+ Total time: 0:00:41 (0.2434 s / it)
+tensor(4.3264, device='cuda:0', dtype=torch.float64)
+Epoch: [201]  [ 0/76]  eta: 0:04:10  lr: 0.000010  loss: 40.5748 (40.5748)  time: 3.2916  data: 2.8337  max mem: 16337
+Epoch: [201]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.3773 (45.2339)  time: 3.4174  data: 2.9608  max mem: 16337
+Epoch: [201] Total time: 0:04:19 (3.4109 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1989  data: 0.1827  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2715  data: 0.2558  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2502  data: 0.2347  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3082  data: 0.2911  max mem: 16337
+ Total time: 0:00:41 (0.2443 s / it)
+tensor(4.2962, device='cuda:0', dtype=torch.float64)
+Epoch: [202]  [ 0/76]  eta: 0:05:46  lr: 0.000010  loss: 49.8183 (49.8183)  time: 4.5572  data: 4.0986  max mem: 16337
+Epoch: [202]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.4440 (44.1748)  time: 3.2889  data: 2.8325  max mem: 16337
+Epoch: [202] Total time: 0:04:17 (3.3885 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1981  data: 0.1820  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2770  data: 0.2612  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2683  data: 0.2512  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2993  data: 0.2817  max mem: 16337
+ Total time: 0:00:41 (0.2426 s / it)
+tensor(4.3053, device='cuda:0', dtype=torch.float64)
+Epoch: [203]  [ 0/76]  eta: 0:04:17  lr: 0.000010  loss: 35.2599 (35.2599)  time: 3.3890  data: 2.9311  max mem: 16337
+Epoch: [203]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 44.9026 (45.9283)  time: 3.3755  data: 2.9190  max mem: 16337
+Epoch: [203] Total time: 0:04:15 (3.3657 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1953  data: 0.1797  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2748  data: 0.2592  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2488  data: 0.2334  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2733  data: 0.2578  max mem: 16337
+ Total time: 0:00:41 (0.2429 s / it)
+tensor(4.3379, device='cuda:0', dtype=torch.float64)
+Epoch: [204]  [ 0/76]  eta: 0:04:25  lr: 0.000010  loss: 50.9714 (50.9714)  time: 3.4957  data: 3.0371  max mem: 16337
+Epoch: [204]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 39.4587 (45.3196)  time: 3.4193  data: 2.9628  max mem: 16337
+Epoch: [204] Total time: 0:04:20 (3.4234 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1936  data: 0.1781  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2914  data: 0.2757  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2471  data: 0.2314  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2721  data: 0.2564  max mem: 16337
+ Total time: 0:00:41 (0.2453 s / it)
+tensor(4.2731, device='cuda:0', dtype=torch.float64)
+Epoch: [205]  [ 0/76]  eta: 0:04:25  lr: 0.000010  loss: 56.0581 (56.0581)  time: 3.4914  data: 3.0335  max mem: 16337
+Epoch: [205]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 46.5344 (43.5714)  time: 3.5641  data: 3.1078  max mem: 16337
+Epoch: [205] Total time: 0:04:38 (3.6598 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1933  data: 0.1778  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2893  data: 0.2735  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2693  data: 0.2531  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2744  data: 0.2585  max mem: 16337
+ Total time: 0:00:41 (0.2455 s / it)
+tensor(4.3295, device='cuda:0', dtype=torch.float64)
+Epoch: [206]  [ 0/76]  eta: 0:04:23  lr: 0.000010  loss: 47.9567 (47.9567)  time: 3.4698  data: 3.0120  max mem: 16337
+Epoch: [206]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 60.5093 (45.3795)  time: 3.7013  data: 3.2451  max mem: 16337
+Epoch: [206] Total time: 0:04:41 (3.7045 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1938  data: 0.1782  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2822  data: 0.2661  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2464  data: 0.2300  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2759  data: 0.2595  max mem: 16337
+ Total time: 0:00:41 (0.2450 s / it)
+tensor(4.3018, device='cuda:0', dtype=torch.float64)
+Epoch: [207]  [ 0/76]  eta: 0:04:29  lr: 0.000010  loss: 37.1256 (37.1256)  time: 3.5484  data: 3.0903  max mem: 16337
+Epoch: [207]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 29.6334 (43.2545)  time: 3.6845  data: 3.2283  max mem: 16337
+Epoch: [207] Total time: 0:04:40 (3.6868 s / it)
+  [  0/171]  eta: 0:00:44    time: 0.2577  data: 0.2396  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3001  data: 0.2837  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2463  data: 0.2307  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2932  data: 0.2775  max mem: 16337
+ Total time: 0:00:43 (0.2532 s / it)
+tensor(4.3232, device='cuda:0', dtype=torch.float64)
+Epoch: [208]  [ 0/76]  eta: 0:04:32  lr: 0.000010  loss: 47.9673 (47.9673)  time: 3.5819  data: 3.1235  max mem: 16337
+Epoch: [208]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 58.9441 (46.7069)  time: 3.6168  data: 3.1607  max mem: 16337
+Epoch: [208] Total time: 0:04:36 (3.6369 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1956  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2739  data: 0.2583  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2553  data: 0.2397  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2797  data: 0.2640  max mem: 16337
+ Total time: 0:00:42 (0.2475 s / it)
+tensor(4.3167, device='cuda:0', dtype=torch.float64)
+Epoch: [209]  [ 0/76]  eta: 0:04:31  lr: 0.000010  loss: 41.5355 (41.5355)  time: 3.5671  data: 3.1095  max mem: 16337
+Epoch: [209]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 61.1526 (45.3742)  time: 3.6448  data: 3.1885  max mem: 16337
+Epoch: [209] Total time: 0:04:39 (3.6748 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1977  data: 0.1814  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3043  data: 0.2862  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2535  data: 0.2379  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2772  data: 0.2616  max mem: 16337
+ Total time: 0:00:43 (0.2557 s / it)
+tensor(4.3145, device='cuda:0', dtype=torch.float64)
+Epoch: [210]  [ 0/76]  eta: 0:04:25  lr: 0.000010  loss: 49.5669 (49.5669)  time: 3.4941  data: 3.0358  max mem: 16337
+Epoch: [210]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 39.7324 (45.5380)  time: 3.6161  data: 3.1599  max mem: 16337
+Epoch: [210] Total time: 0:04:28 (3.5290 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1990  data: 0.1831  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2701  data: 0.2550  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2756  data: 0.2597  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3032  data: 0.2876  max mem: 16337
+ Total time: 0:00:43 (0.2523 s / it)
+tensor(4.2783, device='cuda:0', dtype=torch.float64)
+Epoch: [211]  [ 0/76]  eta: 0:04:37  lr: 0.000010  loss: 55.2057 (55.2057)  time: 3.6538  data: 3.1968  max mem: 16337
+Epoch: [211]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 40.4806 (45.7767)  time: 3.3767  data: 2.9207  max mem: 16337
+Epoch: [211] Total time: 0:04:15 (3.3680 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2028  data: 0.1829  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3383  data: 0.3210  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.3161  data: 0.2985  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3767  data: 0.3578  max mem: 16337
+ Total time: 0:00:46 (0.2719 s / it)
+tensor(4.3467, device='cuda:0', dtype=torch.float64)
+Epoch: [212]  [ 0/76]  eta: 0:04:04  lr: 0.000010  loss: 35.6895 (35.6895)  time: 3.2152  data: 2.7575  max mem: 16337
+Epoch: [212]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 55.1813 (43.7231)  time: 3.3626  data: 2.9067  max mem: 16337
+Epoch: [212] Total time: 0:04:15 (3.3679 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1955  data: 0.1802  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2708  data: 0.2556  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2439  data: 0.2286  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2736  data: 0.2581  max mem: 16337
+ Total time: 0:00:42 (0.2461 s / it)
+tensor(4.3864, device='cuda:0', dtype=torch.float64)
+Epoch: [213]  [ 0/76]  eta: 0:04:35  lr: 0.000010  loss: 34.1065 (34.1065)  time: 3.6203  data: 3.1624  max mem: 16337
+Epoch: [213]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 39.8284 (44.6053)  time: 3.4319  data: 2.9760  max mem: 16337
+Epoch: [213] Total time: 0:04:22 (3.4585 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1935  data: 0.1784  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2777  data: 0.2622  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2621  data: 0.2453  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3149  data: 0.2975  max mem: 16337
+ Total time: 0:00:42 (0.2489 s / it)
+tensor(4.2895, device='cuda:0', dtype=torch.float64)
+Epoch: [214]  [ 0/76]  eta: 0:05:08  lr: 0.000010  loss: 56.0333 (56.0333)  time: 4.0538  data: 3.5955  max mem: 16337
+Epoch: [214]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 41.6195 (44.4087)  time: 3.8694  data: 3.4131  max mem: 16337
+Epoch: [214] Total time: 0:04:42 (3.7148 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1958  data: 0.1799  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2990  data: 0.2825  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2545  data: 0.2391  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2930  data: 0.2772  max mem: 16337
+ Total time: 0:00:42 (0.2467 s / it)
+tensor(4.3396, device='cuda:0', dtype=torch.float64)
+Epoch: [215]  [ 0/76]  eta: 0:04:27  lr: 0.000010  loss: 34.0788 (34.0788)  time: 3.5240  data: 3.0666  max mem: 16337
+Epoch: [215]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 38.7992 (44.3762)  time: 3.4189  data: 2.9616  max mem: 16337
+Epoch: [215] Total time: 0:04:31 (3.5744 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1964  data: 0.1809  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2705  data: 0.2551  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2735  data: 0.2576  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3049  data: 0.2887  max mem: 16337
+ Total time: 0:00:41 (0.2434 s / it)
+tensor(4.3433, device='cuda:0', dtype=torch.float64)
+Epoch: [216]  [ 0/76]  eta: 0:04:40  lr: 0.000010  loss: 43.6796 (43.6796)  time: 3.6843  data: 3.2265  max mem: 16337
+Epoch: [216]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.7915 (42.5370)  time: 3.6353  data: 3.1788  max mem: 16337
+Epoch: [216] Total time: 0:04:31 (3.5782 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1961  data: 0.1805  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.3030  data: 0.2872  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2492  data: 0.2332  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3075  data: 0.2916  max mem: 16337
+ Total time: 0:00:43 (0.2551 s / it)
+tensor(4.3389, device='cuda:0', dtype=torch.float64)
+Epoch: [217]  [ 0/76]  eta: 0:05:01  lr: 0.000010  loss: 40.4219 (40.4219)  time: 3.9668  data: 3.5086  max mem: 16337
+Epoch: [217]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 47.4915 (44.8531)  time: 3.5293  data: 3.0730  max mem: 16337
+Epoch: [217] Total time: 0:04:34 (3.6168 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1982  data: 0.1819  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2762  data: 0.2605  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2443  data: 0.2288  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2679  data: 0.2524  max mem: 16337
+ Total time: 0:00:41 (0.2437 s / it)
+tensor(4.3247, device='cuda:0', dtype=torch.float64)
+Epoch: [218]  [ 0/76]  eta: 0:04:33  lr: 0.000010  loss: 48.1756 (48.1756)  time: 3.5951  data: 3.1368  max mem: 16337
+Epoch: [218]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 35.0827 (43.5273)  time: 3.6227  data: 3.1663  max mem: 16337
+Epoch: [218] Total time: 0:04:34 (3.6107 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1940  data: 0.1785  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.3171  data: 0.3009  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2713  data: 0.2543  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2817  data: 0.2652  max mem: 16337
+ Total time: 0:00:43 (0.2540 s / it)
+tensor(4.3411, device='cuda:0', dtype=torch.float64)
+Epoch: [219]  [ 0/76]  eta: 0:04:26  lr: 0.000010  loss: 48.1046 (48.1046)  time: 3.5071  data: 3.0491  max mem: 16337
+Epoch: [219]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 38.4831 (47.4707)  time: 3.5490  data: 3.0927  max mem: 16337
+Epoch: [219] Total time: 0:04:35 (3.6285 s / it)
+  [  0/171]  eta: 0:00:35    time: 0.2074  data: 0.1911  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2699  data: 0.2545  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2504  data: 0.2347  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2702  data: 0.2544  max mem: 16337
+ Total time: 0:00:43 (0.2520 s / it)
+tensor(4.3424, device='cuda:0', dtype=torch.float64)
+Epoch: [220]  [ 0/76]  eta: 0:04:35  lr: 0.000010  loss: 59.2669 (59.2669)  time: 3.6286  data: 3.1711  max mem: 16337
+Epoch: [220]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 32.1340 (44.6553)  time: 3.6216  data: 3.1653  max mem: 16337
+Epoch: [220] Total time: 0:04:41 (3.7003 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1961  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2854  data: 0.2696  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2464  data: 0.2309  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2806  data: 0.2650  max mem: 16337
+ Total time: 0:00:42 (0.2489 s / it)
+tensor(4.2720, device='cuda:0', dtype=torch.float64)
+Epoch: [221]  [ 0/76]  eta: 0:04:44  lr: 0.000010  loss: 62.9245 (62.9245)  time: 3.7379  data: 3.2800  max mem: 16337
+Epoch: [221]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 45.3949 (45.2158)  time: 3.6628  data: 3.2062  max mem: 16337
+Epoch: [221] Total time: 0:04:41 (3.7045 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1972  data: 0.1810  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.2833  data: 0.2676  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2448  data: 0.2294  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2692  data: 0.2538  max mem: 16337
+ Total time: 0:00:42 (0.2501 s / it)
+tensor(4.2816, device='cuda:0', dtype=torch.float64)
+Epoch: [222]  [ 0/76]  eta: 0:04:23  lr: 0.000010  loss: 37.2369 (37.2369)  time: 3.4732  data: 3.0147  max mem: 16337
+Epoch: [222]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 56.3534 (42.9931)  time: 3.5895  data: 3.1333  max mem: 16337
+Epoch: [222] Total time: 0:04:39 (3.6781 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1961  data: 0.1805  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2735  data: 0.2581  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2460  data: 0.2306  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2698  data: 0.2544  max mem: 16337
+ Total time: 0:00:41 (0.2425 s / it)
+tensor(4.3140, device='cuda:0', dtype=torch.float64)
+Epoch: [223]  [ 0/76]  eta: 0:05:04  lr: 0.000010  loss: 43.6157 (43.6157)  time: 4.0029  data: 3.5451  max mem: 16337
+Epoch: [223]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 40.4278 (44.1713)  time: 3.6201  data: 3.1636  max mem: 16337
+Epoch: [223] Total time: 0:04:37 (3.6479 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2265  data: 0.2096  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2809  data: 0.2647  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2567  data: 0.2409  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2763  data: 0.2608  max mem: 16337
+ Total time: 0:00:42 (0.2498 s / it)
+tensor(4.3304, device='cuda:0', dtype=torch.float64)
+Epoch: [224]  [ 0/76]  eta: 0:04:37  lr: 0.000010  loss: 45.5289 (45.5289)  time: 3.6485  data: 3.1909  max mem: 16337
+Epoch: [224]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 42.2015 (46.7385)  time: 3.6102  data: 3.1537  max mem: 16337
+Epoch: [224] Total time: 0:04:31 (3.5687 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2368  data: 0.2204  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2876  data: 0.2715  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2449  data: 0.2294  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2799  data: 0.2641  max mem: 16337
+ Total time: 0:00:43 (0.2541 s / it)
+tensor(4.3473, device='cuda:0', dtype=torch.float64)
+Epoch: [225]  [ 0/76]  eta: 0:04:12  lr: 0.000010  loss: 52.3032 (52.3032)  time: 3.3168  data: 2.8591  max mem: 16337
+Epoch: [225]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 33.0768 (43.6985)  time: 3.6158  data: 3.1595  max mem: 16337
+Epoch: [225] Total time: 0:04:40 (3.6955 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2016  data: 0.1859  max mem: 16337
+  [ 80/171]  eta: 0:00:26    time: 0.3125  data: 0.2950  max mem: 16337
+  [160/171]  eta: 0:00:03    time: 0.2699  data: 0.2538  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2846  data: 0.2689  max mem: 16337
+ Total time: 0:00:46 (0.2746 s / it)
+tensor(4.3148, device='cuda:0', dtype=torch.float64)
+Epoch: [226]  [ 0/76]  eta: 0:04:36  lr: 0.000010  loss: 72.4061 (72.4061)  time: 3.6423  data: 3.1845  max mem: 16337
+Epoch: [226]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 41.1889 (45.3811)  time: 3.7779  data: 3.3215  max mem: 16337
+Epoch: [226] Total time: 0:04:49 (3.8085 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1972  data: 0.1809  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2697  data: 0.2543  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2987  data: 0.2811  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3402  data: 0.3206  max mem: 16337
+ Total time: 0:00:42 (0.2494 s / it)
+tensor(4.3475, device='cuda:0', dtype=torch.float64)
+Epoch: [227]  [ 0/76]  eta: 0:04:55  lr: 0.000010  loss: 39.0241 (39.0241)  time: 3.8911  data: 3.4332  max mem: 16337
+Epoch: [227]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 43.4766 (45.6251)  time: 3.6422  data: 3.1859  max mem: 16337
+Epoch: [227] Total time: 0:04:41 (3.7092 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1949  data: 0.1794  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2890  data: 0.2735  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2438  data: 0.2284  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2677  data: 0.2523  max mem: 16337
+ Total time: 0:00:41 (0.2408 s / it)
+tensor(4.3072, device='cuda:0', dtype=torch.float64)
+Epoch: [228]  [ 0/76]  eta: 0:04:36  lr: 0.000010  loss: 56.5964 (56.5964)  time: 3.6387  data: 3.1812  max mem: 16337
+Epoch: [228]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 44.7538 (43.9831)  time: 3.6478  data: 3.1917  max mem: 16337
+Epoch: [228] Total time: 0:04:37 (3.6521 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1951  data: 0.1795  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2708  data: 0.2553  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2451  data: 0.2296  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2694  data: 0.2539  max mem: 16337
+ Total time: 0:00:41 (0.2448 s / it)
+tensor(4.3047, device='cuda:0', dtype=torch.float64)
+Epoch: [229]  [ 0/76]  eta: 0:05:04  lr: 0.000010  loss: 64.9586 (64.9586)  time: 4.0043  data: 3.5460  max mem: 16337
+Epoch: [229]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 61.2088 (45.1358)  time: 3.5259  data: 3.0696  max mem: 16337
+Epoch: [229] Total time: 0:04:40 (3.6889 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1968  data: 0.1813  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.3072  data: 0.2911  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2518  data: 0.2360  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2942  data: 0.2785  max mem: 16337
+ Total time: 0:00:42 (0.2501 s / it)
+tensor(4.3012, device='cuda:0', dtype=torch.float64)
+Epoch: [230]  [ 0/76]  eta: 0:04:48  lr: 0.000010  loss: 53.5014 (53.5014)  time: 3.7966  data: 3.3384  max mem: 16337
+Epoch: [230]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 40.3568 (44.2304)  time: 3.6855  data: 3.2289  max mem: 16337
+Epoch: [230] Total time: 0:04:40 (3.6864 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1985  data: 0.1824  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2851  data: 0.2690  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2449  data: 0.2294  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3125  data: 0.2963  max mem: 16337
+ Total time: 0:00:42 (0.2505 s / it)
+tensor(4.3246, device='cuda:0', dtype=torch.float64)
+Epoch: [231]  [ 0/76]  eta: 0:04:33  lr: 0.000010  loss: 41.0151 (41.0151)  time: 3.5921  data: 3.1347  max mem: 16337
+Epoch: [231]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 43.4736 (44.0265)  time: 3.4846  data: 3.0282  max mem: 16337
+Epoch: [231] Total time: 0:04:29 (3.5468 s / it)
+  [  0/171]  eta: 0:00:40    time: 0.2379  data: 0.2204  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2802  data: 0.2647  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2510  data: 0.2351  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2748  data: 0.2589  max mem: 16337
+ Total time: 0:00:42 (0.2476 s / it)
+tensor(4.2663, device='cuda:0', dtype=torch.float64)
+Epoch: [232]  [ 0/76]  eta: 0:04:20  lr: 0.000010  loss: 36.7808 (36.7808)  time: 3.4269  data: 2.9688  max mem: 16337
+Epoch: [232]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 36.6749 (43.1698)  time: 3.5002  data: 3.0435  max mem: 16337
+Epoch: [232] Total time: 0:04:32 (3.5831 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1986  data: 0.1823  max mem: 16337
+  [ 80/171]  eta: 0:00:23    time: 0.2699  data: 0.2542  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2627  data: 0.2472  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2867  data: 0.2712  max mem: 16337
+ Total time: 0:00:44 (0.2625 s / it)
+tensor(4.2894, device='cuda:0', dtype=torch.float64)
+Epoch: [233]  [ 0/76]  eta: 0:04:27  lr: 0.000010  loss: 33.9183 (33.9183)  time: 3.5140  data: 3.0563  max mem: 16337
+Epoch: [233]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 78.1879 (47.0410)  time: 3.6723  data: 3.2157  max mem: 16337
+Epoch: [233] Total time: 0:04:43 (3.7351 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1980  data: 0.1818  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2693  data: 0.2538  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2814  data: 0.2649  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3013  data: 0.2853  max mem: 16337
+ Total time: 0:00:41 (0.2450 s / it)
+tensor(4.2818, device='cuda:0', dtype=torch.float64)
+Epoch: [234]  [ 0/76]  eta: 0:04:30  lr: 0.000010  loss: 33.8954 (33.8954)  time: 3.5573  data: 3.0993  max mem: 16337
+Epoch: [234]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 40.5490 (44.5199)  time: 3.7625  data: 3.3060  max mem: 16337
+Epoch: [234] Total time: 0:04:40 (3.6956 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1964  data: 0.1807  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2829  data: 0.2668  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2437  data: 0.2283  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2712  data: 0.2558  max mem: 16337
+ Total time: 0:00:41 (0.2405 s / it)
+tensor(4.3009, device='cuda:0', dtype=torch.float64)
+Epoch: [235]  [ 0/76]  eta: 0:04:31  lr: 0.000010  loss: 41.4113 (41.4113)  time: 3.5672  data: 3.1087  max mem: 16337
+Epoch: [235]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.4364 (44.6716)  time: 3.6694  data: 3.2130  max mem: 16337
+Epoch: [235] Total time: 0:04:36 (3.6316 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1976  data: 0.1814  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2898  data: 0.2736  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2520  data: 0.2362  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2684  data: 0.2529  max mem: 16337
+ Total time: 0:00:42 (0.2470 s / it)
+tensor(4.3122, device='cuda:0', dtype=torch.float64)
+Epoch: [236]  [ 0/76]  eta: 0:05:19  lr: 0.000010  loss: 47.1334 (47.1334)  time: 4.1989  data: 3.7401  max mem: 16337
+Epoch: [236]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 43.5401 (42.5597)  time: 3.5921  data: 3.1360  max mem: 16337
+Epoch: [236] Total time: 0:04:38 (3.6649 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1980  data: 0.1819  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2688  data: 0.2537  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2439  data: 0.2288  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2898  data: 0.2745  max mem: 16337
+ Total time: 0:00:41 (0.2417 s / it)
+tensor(4.2934, device='cuda:0', dtype=torch.float64)
+Epoch: [237]  [ 0/76]  eta: 0:04:09  lr: 0.000010  loss: 58.0961 (58.0961)  time: 3.2850  data: 2.8276  max mem: 16337
+Epoch: [237]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 44.5816 (44.0036)  time: 3.5632  data: 3.1073  max mem: 16337
+Epoch: [237] Total time: 0:04:37 (3.6573 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1963  data: 0.1803  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2979  data: 0.2824  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2466  data: 0.2314  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2677  data: 0.2526  max mem: 16337
+ Total time: 0:00:41 (0.2447 s / it)
+tensor(4.3034, device='cuda:0', dtype=torch.float64)
+Epoch: [238]  [ 0/76]  eta: 0:04:35  lr: 0.000010  loss: 39.6600 (39.6600)  time: 3.6255  data: 3.1679  max mem: 16337
+Epoch: [238]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 44.8028 (43.3734)  time: 3.7977  data: 3.3415  max mem: 16337
+Epoch: [238] Total time: 0:04:44 (3.7390 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1943  data: 0.1790  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2739  data: 0.2584  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2446  data: 0.2293  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2989  data: 0.2838  max mem: 16337
+ Total time: 0:00:41 (0.2456 s / it)
+tensor(4.3201, device='cuda:0', dtype=torch.float64)
+Epoch: [239]  [ 0/76]  eta: 0:04:27  lr: 0.000010  loss: 53.5787 (53.5787)  time: 3.5136  data: 3.0560  max mem: 16337
+Epoch: [239]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 73.3272 (45.3221)  time: 3.9035  data: 3.4471  max mem: 16337
+Epoch: [239] Total time: 0:04:48 (3.7994 s / it)
+  [  0/171]  eta: 0:00:38    time: 0.2254  data: 0.2088  max mem: 16337
+  [ 80/171]  eta: 0:00:27    time: 0.3381  data: 0.3207  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2690  data: 0.2533  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2931  data: 0.2776  max mem: 16337
+ Total time: 0:00:46 (0.2698 s / it)
+tensor(4.2796, device='cuda:0', dtype=torch.float64)
+Epoch: [240]  [ 0/76]  eta: 0:04:32  lr: 0.000010  loss: 40.6213 (40.6213)  time: 3.5829  data: 3.1250  max mem: 16337
+Epoch: [240]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 53.9863 (44.9075)  time: 3.7631  data: 3.3070  max mem: 16337
+Epoch: [240] Total time: 0:04:45 (3.7518 s / it)
+  [  0/171]  eta: 0:00:41    time: 0.2413  data: 0.2241  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2686  data: 0.2535  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2559  data: 0.2391  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2843  data: 0.2675  max mem: 16337
+ Total time: 0:00:42 (0.2458 s / it)
+tensor(4.3189, device='cuda:0', dtype=torch.float64)
+Epoch: [241]  [ 0/76]  eta: 0:04:45  lr: 0.000010  loss: 57.9228 (57.9228)  time: 3.7579  data: 3.3000  max mem: 16337
+Epoch: [241]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 63.2800 (45.6487)  time: 3.6653  data: 3.2091  max mem: 16337
+Epoch: [241] Total time: 0:04:39 (3.6819 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1947  data: 0.1793  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2733  data: 0.2583  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2437  data: 0.2286  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2705  data: 0.2550  max mem: 16337
+ Total time: 0:00:41 (0.2400 s / it)
+tensor(4.3325, device='cuda:0', dtype=torch.float64)
+Epoch: [242]  [ 0/76]  eta: 0:04:41  lr: 0.000010  loss: 36.5029 (36.5029)  time: 3.7077  data: 3.2501  max mem: 16337
+Epoch: [242]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 54.1305 (46.2173)  time: 3.6247  data: 3.1686  max mem: 16337
+Epoch: [242] Total time: 0:04:40 (3.6874 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1816  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2705  data: 0.2551  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2451  data: 0.2298  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2694  data: 0.2541  max mem: 16337
+ Total time: 0:00:40 (0.2389 s / it)
+tensor(4.3212, device='cuda:0', dtype=torch.float64)
+Epoch: [243]  [ 0/76]  eta: 0:07:33  lr: 0.000010  loss: 39.5678 (39.5678)  time: 5.9720  data: 5.5143  max mem: 16337
+Epoch: [243]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 60.3710 (44.3320)  time: 3.3286  data: 2.8724  max mem: 16337
+Epoch: [243] Total time: 0:04:19 (3.4176 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2005  data: 0.1823  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2705  data: 0.2550  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2437  data: 0.2285  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2707  data: 0.2553  max mem: 16337
+ Total time: 0:00:43 (0.2534 s / it)
+tensor(4.3214, device='cuda:0', dtype=torch.float64)
+Epoch: [244]  [ 0/76]  eta: 0:04:14  lr: 0.000010  loss: 42.7220 (42.7220)  time: 3.3457  data: 2.8877  max mem: 16337
+Epoch: [244]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 31.0218 (42.5370)  time: 3.3515  data: 2.8954  max mem: 16337
+Epoch: [244] Total time: 0:04:15 (3.3605 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1947  data: 0.1795  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2860  data: 0.2706  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2436  data: 0.2286  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2676  data: 0.2526  max mem: 16337
+ Total time: 0:00:41 (0.2423 s / it)
+tensor(4.3332, device='cuda:0', dtype=torch.float64)
+Epoch: [245]  [ 0/76]  eta: 0:04:16  lr: 0.000010  loss: 43.4310 (43.4310)  time: 3.3718  data: 2.9141  max mem: 16337
+Epoch: [245]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 38.6340 (43.6988)  time: 3.4006  data: 2.9444  max mem: 16337
+Epoch: [245] Total time: 0:04:16 (3.3798 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.1993  data: 0.1820  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2703  data: 0.2551  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2510  data: 0.2358  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3076  data: 0.2920  max mem: 16337
+ Total time: 0:00:42 (0.2498 s / it)
+tensor(4.3453, device='cuda:0', dtype=torch.float64)
+Epoch: [246]  [ 0/76]  eta: 0:04:03  lr: 0.000010  loss: 46.0122 (46.0122)  time: 3.2101  data: 2.7527  max mem: 16337
+Epoch: [246]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 106.7858 (44.4137)  time: 3.3635  data: 2.9062  max mem: 16337
+Epoch: [246] Total time: 0:04:16 (3.3706 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1946  data: 0.1794  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2711  data: 0.2559  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2448  data: 0.2297  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2689  data: 0.2538  max mem: 16337
+ Total time: 0:00:41 (0.2425 s / it)
+tensor(4.3509, device='cuda:0', dtype=torch.float64)
+Epoch: [247]  [ 0/76]  eta: 0:04:11  lr: 0.000010  loss: 63.4011 (63.4011)  time: 3.3049  data: 2.8471  max mem: 16337
+Epoch: [247]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 37.3389 (44.0394)  time: 3.2937  data: 2.8377  max mem: 16337
+Epoch: [247] Total time: 0:04:16 (3.3769 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1936  data: 0.1782  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2694  data: 0.2542  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2441  data: 0.2290  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2681  data: 0.2529  max mem: 16337
+ Total time: 0:00:40 (0.2381 s / it)
+tensor(4.3558, device='cuda:0', dtype=torch.float64)
+Epoch: [248]  [ 0/76]  eta: 0:03:56  lr: 0.000010  loss: 46.0711 (46.0711)  time: 3.1149  data: 2.6569  max mem: 16337
+Epoch: [248]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 43.8490 (43.3356)  time: 3.5163  data: 3.0600  max mem: 16337
+Epoch: [248] Total time: 0:04:19 (3.4111 s / it)
+  [  0/171]  eta: 0:00:42    time: 0.2477  data: 0.2310  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2746  data: 0.2596  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2535  data: 0.2379  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2679  data: 0.2527  max mem: 16337
+ Total time: 0:00:41 (0.2455 s / it)
+tensor(4.3662, device='cuda:0', dtype=torch.float64)
+Epoch: [249]  [ 0/76]  eta: 0:04:09  lr: 0.000010  loss: 40.3048 (40.3048)  time: 3.2775  data: 2.8201  max mem: 16337
+Epoch: [249]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 41.5707 (43.8673)  time: 3.3669  data: 2.9108  max mem: 16337
+Epoch: [249] Total time: 0:04:13 (3.3419 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1935  data: 0.1783  max mem: 16337
+  [ 80/171]  eta: 0:00:21    time: 0.2749  data: 0.2597  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2475  data: 0.2324  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2706  data: 0.2555  max mem: 16337
+ Total time: 0:00:41 (0.2410 s / it)
+tensor(4.3514, device='cuda:0', dtype=torch.float64)
+Epoch: [250]  [ 0/76]  eta: 0:04:20  lr: 0.000010  loss: 52.6325 (52.6325)  time: 3.4298  data: 2.9724  max mem: 16337
+Epoch: [250]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.7754 (44.9786)  time: 3.3527  data: 2.8964  max mem: 16337
+Epoch: [250] Total time: 0:04:14 (3.3538 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1932  data: 0.1781  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2699  data: 0.2548  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2454  data: 0.2300  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2734  data: 0.2580  max mem: 16337
+ Total time: 0:00:42 (0.2473 s / it)
+tensor(4.3735, device='cuda:0', dtype=torch.float64)
+Epoch: [251]  [ 0/76]  eta: 0:04:26  lr: 0.000010  loss: 45.8341 (45.8341)  time: 3.5062  data: 3.0484  max mem: 16337
+Epoch: [251]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 37.4678 (42.0021)  time: 3.3110  data: 2.8550  max mem: 16337
+Epoch: [251] Total time: 0:04:14 (3.3507 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1947  data: 0.1795  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2686  data: 0.2535  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2576  data: 0.2421  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2670  data: 0.2518  max mem: 16337
+ Total time: 0:00:41 (0.2426 s / it)
+tensor(4.3558, device='cuda:0', dtype=torch.float64)
+Epoch: [252]  [ 0/76]  eta: 0:04:25  lr: 0.000010  loss: 33.0250 (33.0250)  time: 3.4967  data: 3.0395  max mem: 16337
+Epoch: [252]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 34.8660 (44.1474)  time: 3.3479  data: 2.8917  max mem: 16337
+Epoch: [252] Total time: 0:04:15 (3.3627 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1964  data: 0.1799  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2784  data: 0.2629  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2503  data: 0.2352  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2807  data: 0.2656  max mem: 16337
+ Total time: 0:00:41 (0.2429 s / it)
+tensor(4.3433, device='cuda:0', dtype=torch.float64)
+Epoch: [253]  [ 0/76]  eta: 0:04:01  lr: 0.000010  loss: 38.4838 (38.4838)  time: 3.1786  data: 2.7203  max mem: 16337
+Epoch: [253]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 55.2394 (45.4392)  time: 3.3635  data: 2.9075  max mem: 16337
+Epoch: [253] Total time: 0:04:17 (3.3898 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1942  data: 0.1789  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2906  data: 0.2729  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2695  data: 0.2540  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2944  data: 0.2787  max mem: 16337
+ Total time: 0:00:43 (0.2551 s / it)
+tensor(4.3439, device='cuda:0', dtype=torch.float64)
+Epoch: [254]  [ 0/76]  eta: 0:04:23  lr: 0.000010  loss: 45.3496 (45.3496)  time: 3.4719  data: 3.0141  max mem: 16337
+Epoch: [254]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 49.8059 (43.3318)  time: 3.3432  data: 2.8872  max mem: 16337
+Epoch: [254] Total time: 0:04:14 (3.3464 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1930  data: 0.1779  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2730  data: 0.2574  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2512  data: 0.2349  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2743  data: 0.2580  max mem: 16337
+ Total time: 0:00:42 (0.2461 s / it)
+tensor(4.3872, device='cuda:0', dtype=torch.float64)
+Epoch: [255]  [ 0/76]  eta: 0:04:00  lr: 0.000010  loss: 35.7072 (35.7072)  time: 3.1661  data: 2.7084  max mem: 16337
+Epoch: [255]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 37.6519 (41.9295)  time: 3.3512  data: 2.8949  max mem: 16337
+Epoch: [255] Total time: 0:04:16 (3.3799 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1945  data: 0.1793  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3375  data: 0.3188  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2719  data: 0.2553  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3020  data: 0.2855  max mem: 16337
+ Total time: 0:00:46 (0.2724 s / it)
+tensor(4.3751, device='cuda:0', dtype=torch.float64)
+Epoch: [256]  [ 0/76]  eta: 0:04:23  lr: 0.000010  loss: 68.9687 (68.9687)  time: 3.4726  data: 3.0134  max mem: 16337
+Epoch: [256]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 38.4829 (45.1888)  time: 3.4742  data: 3.0169  max mem: 16337
+Epoch: [256] Total time: 0:04:24 (3.4861 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1959  data: 0.1800  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2725  data: 0.2570  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2666  data: 0.2510  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2693  data: 0.2536  max mem: 16337
+ Total time: 0:00:42 (0.2461 s / it)
+tensor(4.3678, device='cuda:0', dtype=torch.float64)
+Epoch: [257]  [ 0/76]  eta: 0:04:11  lr: 0.000010  loss: 55.3573 (55.3573)  time: 3.3154  data: 2.8576  max mem: 16337
+Epoch: [257]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 36.8703 (43.9171)  time: 3.4890  data: 3.0318  max mem: 16337
+Epoch: [257] Total time: 0:04:18 (3.3982 s / it)
+  [  0/171]  eta: 0:00:34    time: 0.2013  data: 0.1859  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2867  data: 0.2693  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2445  data: 0.2292  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2680  data: 0.2528  max mem: 16337
+ Total time: 0:00:43 (0.2520 s / it)
+tensor(4.3712, device='cuda:0', dtype=torch.float64)
+Epoch: [258]  [ 0/76]  eta: 0:04:09  lr: 0.000010  loss: 42.6297 (42.6297)  time: 3.2773  data: 2.8193  max mem: 16337
+Epoch: [258]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 53.2337 (44.6763)  time: 3.3716  data: 2.9153  max mem: 16337
+Epoch: [258] Total time: 0:04:15 (3.3570 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1945  data: 0.1790  max mem: 16337
+  [ 80/171]  eta: 0:00:24    time: 0.3468  data: 0.3275  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2448  data: 0.2292  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2812  data: 0.2644  max mem: 16337
+ Total time: 0:00:44 (0.2585 s / it)
+tensor(4.3453, device='cuda:0', dtype=torch.float64)
+Epoch: [259]  [ 0/76]  eta: 0:04:24  lr: 0.000010  loss: 43.1400 (43.1400)  time: 3.4860  data: 3.0273  max mem: 16337
+Epoch: [259]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 41.3013 (44.4018)  time: 3.3076  data: 2.8514  max mem: 16337
+Epoch: [259] Total time: 0:04:16 (3.3785 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1960  data: 0.1808  max mem: 16337
+  [ 80/171]  eta: 0:00:25    time: 0.3630  data: 0.3435  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2678  data: 0.2507  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.3140  data: 0.2961  max mem: 16337
+ Total time: 0:00:46 (0.2732 s / it)
+tensor(4.3281, device='cuda:0', dtype=torch.float64)
+Epoch: [260]  [ 0/76]  eta: 0:04:18  lr: 0.000010  loss: 50.2182 (50.2182)  time: 3.3983  data: 2.9407  max mem: 16337
+Epoch: [260]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 52.4510 (44.3096)  time: 3.3874  data: 2.9313  max mem: 16337
+Epoch: [260] Total time: 0:04:21 (3.4438 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1974  data: 0.1814  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2692  data: 0.2542  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2869  data: 0.2695  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2976  data: 0.2813  max mem: 16337
+ Total time: 0:00:43 (0.2545 s / it)
+tensor(4.3750, device='cuda:0', dtype=torch.float64)
+Epoch: [261]  [ 0/76]  eta: 0:04:13  lr: 0.000010  loss: 55.8702 (55.8702)  time: 3.3310  data: 2.8731  max mem: 16337
+Epoch: [261]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 33.1821 (43.8767)  time: 3.3399  data: 2.8839  max mem: 16337
+Epoch: [261] Total time: 0:04:16 (3.3763 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1950  data: 0.1792  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2803  data: 0.2646  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2465  data: 0.2308  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2846  data: 0.2689  max mem: 16337
+ Total time: 0:00:41 (0.2419 s / it)
+tensor(4.3246, device='cuda:0', dtype=torch.float64)
+Epoch: [262]  [ 0/76]  eta: 0:04:24  lr: 0.000010  loss: 54.5923 (54.5923)  time: 3.4763  data: 3.0187  max mem: 16337
+Epoch: [262]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 47.2696 (44.8375)  time: 3.3401  data: 2.8841  max mem: 16337
+Epoch: [262] Total time: 0:04:14 (3.3435 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1961  data: 0.1802  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2718  data: 0.2567  max mem: 16337
+  [160/171]  eta: 0:00:02    time: 0.2626  data: 0.2453  max mem: 16337
+  [170/171]  eta: 0:00:00    time: 0.2856  data: 0.2687  max mem: 16337
+ Total time: 0:00:41 (0.2455 s / it)
+tensor(4.3806, device='cuda:0', dtype=torch.float64)
+Epoch: [263]  [ 0/76]  eta: 0:04:21  lr: 0.000010  loss: 49.5527 (49.5527)  time: 3.4405  data: 2.9823  max mem: 16337
+Epoch: [263]  [75/76]  eta: 0:00:03  lr: 0.000010  loss: 40.0436 (44.3717)  time: 3.3439  data: 2.8879  max mem: 16337
+Epoch: [263] Total time: 0:04:14 (3.3551 s / it)
+  [  0/171]  eta: 0:00:33    time: 0.1949  data: 0.1791  max mem: 16337
+  [ 80/171]  eta: 0:00:22    time: 0.2693  data: 0.2540  max mem: 16337
